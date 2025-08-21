@@ -32,7 +32,7 @@
       text-align:center; 
       padding:100px 20px; 
       background: linear-gradient(135deg, rgba(236,72,153,0.6), rgba(139,92,246,0.6)), 
-                  url('https://images.unsplash.com/photo-1628851397632-7a3c7eca6e66?auto=format&fit=crop&w=1350&q=80') 
+                  url('maidzy-hero.jpg') 
                   center/cover no-repeat; 
       color:white; 
     }
