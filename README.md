@@ -4,14 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maidzy | Hire Verified Maids in Pune</title>
-  
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  
+
+  <!-- PWA Support -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ec4899">
+  <link rel="icon" href="maidzy-icon.png" type="image/png">
+
   <style>
     body { font-family: 'Poppins', sans-serif; margin: 0; background:#fff; color:#1e293b; }
 
-    /* Header with Logo */
     header { background:#fff; text-align:center; padding:20px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
     .logo { display:flex; align-items:center; justify-content:center; gap:12px; }
     .brand { 
@@ -24,7 +28,6 @@
       margin:0;
     }
 
-    /* Hero Section */
     .hero { 
       text-align:center; 
       padding:100px 20px; 
@@ -48,7 +51,6 @@
     }
     .cta:hover { background:#8b5cf6; color:white; }
 
-    /* Services Section */
     .services { 
       display:grid; 
       grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); 
@@ -67,83 +69,107 @@
     .card:hover { transform: translateY(-8px); box-shadow:0 8px 18px rgba(0,0,0,0.15); }
     .card h3 { margin-top:10px; color:#ec4899; font-size:22px; }
 
-    /* Testimonials */
-    .testimonials { 
-      background:#fdf2f8; 
-      padding:60px; 
-      text-align:center; 
-    }
-    .testimonials h2 { color:#8b5cf6; font-size:32px; margin-bottom:20px; }
-    .testimonials p { font-size:18px; margin:10px 0; color:#444; }
+    .form-section { padding:60px; text-align:center; background:#fdf2f8; }
+    .form-section h2 { color:#ec4899; font-size:28px; margin-bottom:20px; }
+    form { max-width:400px; margin:auto; text-align:left; }
+    input, textarea { width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:6px; font-family:'Poppins',sans-serif; }
+    button { background:#ec4899; color:white; padding:12px 20px; border:none; border-radius:6px; font-weight:bold; cursor:pointer; transition:0.3s; }
+    button:hover { background:#8b5cf6; }
 
-    /* Footer */
-    .footer { 
-      background:#1e1b4b; 
-      color:#f9fafb; 
-      text-align:center; 
-      padding:20px; 
-      font-size:14px;
-    }
+    #formStatus { margin-top:15px; font-weight:bold; }
+
+    .footer { background:#1e1b4b; color:#f9fafb; text-align:center; padding:20px; font-size:14px; }
   </style>
 </head>
 <body>
 
-  <!-- Brand Logo -->
   <header>
     <div class="logo">
-      <!-- Maid Icon (SVG) -->
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="url(#grad)" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
-          </linearGradient>
-        </defs>
-        <!-- Icon path: looks like maid’s head with apron -->
-        <path d="M12 2C9.243 2 7 4.243 7 7v2H5v13h14V9h-2V7c0-2.757-2.243-5-5-5zM9 9V7c0-1.654 1.346-3 3-3s3 1.346 3 3v2H9z"/>
-      </svg>
+      <img src="maidzy-icon.png" alt="Maidzy Logo" width="40" height="40">
       <h1 class="brand">Maidzy</h1>
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
     <h1>Hire Verified Maids in Pune</h1>
-    <p>Daily Cleaning · Cooking · Babysitting · Elder Care</p>
-    <a class="cta" href="https://wa.me/918796832083?text=Hi,%20I%20want%20to%20book%20a%20maid%20in%20Pune%20via%20Maidzy" target="_blank">📲 Book Now on WhatsApp</a>
+    <p>Daily Cleaning · Cooking · Babysitting · More</p>
+    <a class="cta" href="https://wa.me/918796832083?text=Hi,%20I%20want%20to%20book%20a%20maid%20via%20Maidzy" target="_blank">📲 Book on WhatsApp</a>
   </section>
 
-  <!-- Services -->
   <section class="services">
     <div class="card">
-      <h3>🧹 Cleaning</h3>
-      <p>Daily home cleaning, dusting, and mopping services.</p>
+      <h3>Cleaning</h3>
+      <p>Daily dusting, mopping and deep cleaning services.</p>
     </div>
     <div class="card">
-      <h3>🍳 Cooking</h3>
-      <p>Healthy & tasty meals prepared by skilled cooks.</p>
+      <h3>Cooking</h3>
+      <p>Healthy home-cooked meals tailored to your taste.</p>
     </div>
     <div class="card">
-      <h3>👶 Babysitting</h3>
-      <p>Trustworthy babysitters to take care of your children.</p>
+      <h3>Babysitting</h3>
+      <p>Experienced nannies to take care of your loved ones.</p>
     </div>
     <div class="card">
-      <h3>👵 Elder Care</h3>
-      <p>Compassionate care for elderly family members.</p>
+      <h3>More Services</h3>
+      <p>Washing, elderly care, part-time & full-time maids.</p>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <h2>💖 What Our Clients Say</h2>
-    <p>"Maidzy helped me find a reliable maid within a day. Super smooth!"</p>
-    <p>"Very professional, polite, and easy to book service."</p>
+  <!-- Enquiry Form -->
+  <section class="form-section">
+    <h2>📋 Book a Maid</h2>
+    <p>Fill the form below and we’ll connect you to the right maid.</p>
+    
+    <form id="enquiryForm">
+      <label>Name</label>
+      <input type="text" name="name" required>
+      <label>Phone</label>
+      <input type="text" name="phone" required>
+      <label>Requirement</label>
+      <textarea name="requirement" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="formStatus"></p>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
-    © <script>document.write(new Date().getFullYear())</script> Maidzy | Built with 💕 in Pune
+    © <script>document.write(new Date().getFullYear())</script> Maidzy. All rights reserved.
   </footer>
+
+  <!-- Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js")
+        .then(() => console.log("Service Worker Registered"));
+    }
+  </script>
+
+  <!-- Enquiry Form Script -->
+  <script>
+  document.getElementById("enquiryForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    const form = e.target;
+    const data = {
+      name: form.name.value,
+      phone: form.phone.value,
+      requirement: form.requirement.value
+    };
+    fetch("https://script.google.com/macros/s/AKfycbyGCeiAhaCof5FjpKGOQCFFIyXqm1aUj2lo5Ve94Y5ZkhOBOvoFwNaFpVnnfEirfCsG/exec", {
+      method: "POST",
+      body: JSON.stringify(data)
+    })
+    .then(res => res.text())
+    .then(() => {
+      document.getElementById("formStatus").innerText = "✅ Enquiry submitted!";
+      form.reset();
+    })
+    .catch(() => {
+      document.getElementById("formStatus").innerText = "❌ Error, try again.";
+    });
+  });
+  </script>
 
 </body>
 </html>
+
