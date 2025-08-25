@@ -178,7 +178,7 @@
   <section id="enquiry">
     <h2>Send an Enquiry</h2>
     <div class="form-container">
-      <form action="https://script.google.com/macros/s/AKfycbyGCeiAhaCof5FjpKGOQCFFIyXqm1aUj2lo5Ve94Y5ZkhOBOvoFwNaFpVnnfEirfCsG/exec" method="POST">
+      <form action="https://script.google.com/macros/s/AKfycbxngjqttCUiWaPJb2hUP2x-vT2ERmOejquG8JyZWlJDo6C3WcR3SOTf7Hmml6lfHGU1/exec" method="POST">
         <label>Name:</label>
         <input type="text" name="name" required>
         
