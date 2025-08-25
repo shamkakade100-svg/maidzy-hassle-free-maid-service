@@ -52,10 +52,12 @@
       transition: background 0.3s ease;
     }
 
+    /* Increased logo size */
     header img.brand-logo {
-      height: 60px;
+      height: 110px;
       border-radius: 12px;
       transition: transform 0.3s ease;
+      margin-right: 16px;
     }
 
     header img.brand-logo:hover,
@@ -65,8 +67,8 @@
     }
 
     .top-icons a img {
-      width: 34px;
-      height: 34px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       background: #fff;
       padding: 3px;
@@ -397,6 +399,19 @@
         padding: 30px 22px;
       }
     }
+
+    /* Footer smaller icons */
+    .form-section .contact-info a img {
+      width: 18px;
+      height: 18px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    .form-section .contact-info {
+      gap: 14px;
+      font-size: 1rem;
+    }
   </style>
 </head>
 
@@ -420,7 +435,7 @@
     <h1 class="hero-headline">Trusted & Verified Maid Services in Pune</h1>
     <p class="hero-sub">On-demand cleaning, cooking, babysitting, and elder care with fully screened, local, and reliable professionals. Fast booking and dedicated customer support.</p>
     <div class="cta-bar" role="navigation" aria-label="Call to action buttons">
-      <a href="#enquiryFormRealForm" class="cta-btn">Book Your Maid Today</a>
+      <a href="#enquiryFormReal" class="cta-btn">Book Your Maid Today</a>
       <a href="tel:+918796832083" class="cta-btn secondary">Call 8796832083</a>
     </div>
     <div style="font-size:.98em; color:#aa1e77;">
@@ -430,7 +445,8 @@
 
   <section class="services-section" aria-label="Our Services">
     <h2 class="services-title">Our Services</h2>
-    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="cleaning-desc" role="region" aria-label="Daily Home Cleaning">
+    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="cleaning-desc" role="region"
+      aria-label="Daily Home Cleaning">
       <div class="service-emoji" aria-hidden="true">🧹</div>
       <div class="service-info">
         <h3 class="service-title">Daily Home Cleaning</h3>
@@ -446,7 +462,8 @@
       </div>
     </article>
 
-    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="babysitting-desc" role="region" aria-label="Babysitting and Childcare">
+    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="babysitting-desc" role="region"
+      aria-label="Babysitting and Childcare">
       <div class="service-emoji" aria-hidden="true">👶</div>
       <div class="service-info">
         <h3 class="service-title">Babysitting & Childcare</h3>
@@ -454,7 +471,8 @@
       </div>
     </article>
 
-    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="eldercare-desc" role="region" aria-label="Elder Care">
+    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="eldercare-desc" role="region"
+      aria-label="Elder Care">
       <div class="service-emoji" aria-hidden="true">👵</div>
       <div class="service-info">
         <h3 class="service-title">Elder Care</h3>
@@ -462,7 +480,8 @@
       </div>
     </article>
 
-    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="deepclean-desc" role="region" aria-label="Deep Cleaning">
+    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="deepclean-desc" role="region"
+      aria-label="Deep Cleaning">
       <div class="service-emoji" aria-hidden="true">🧼</div>
       <div class="service-info">
         <h3 class="service-title">Deep Cleaning</h3>
@@ -470,7 +489,8 @@
       </div>
     </article>
 
-    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="housekeeping-desc" role="region" aria-label="Housekeeping and Pantry">
+    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="housekeeping-desc" role="region"
+      aria-label="Housekeeping and Pantry">
       <div class="service-emoji" aria-hidden="true">🛋️</div>
       <div class="service-info">
         <h3 class="service-title">Housekeeping + Pantry</h3>
@@ -510,14 +530,14 @@
     </div>
   </section>
 
-  <section class="form-section" id="enquiryFormRealForm" aria-label="Enquiry Form">
+  <section class="form-section" id="enquiryFormReal" aria-label="Enquiry Form">
     <h2 class="form-title">Request a Maid in Pune</h2>
     <p style="color:#7c417a; margin-bottom:15px;">
       Fill the form below – Our team will call within 30 minutes during working hours!<br />
       For instant help, <a href="tel:+918796832083" class="contact-link" style="color:#ff7bb5;font-weight:700;">Call 8796832083</a> or
       <a href="https://wa.me/918796832083" class="contact-link" style="color:green;font-weight:700;">WhatsApp</a>
     </p>
-    <form id="enquiryFormReal" novalidate>
+    <form id="enquiryFormRealForm" novalidate>
       <input id="name" name="name" type="text" placeholder="Full Name" required aria-required="true" />
       <input id="phone" name="phone" type="tel" placeholder="Phone Number" maxlength="12" required aria-required="true"
         pattern="[0-9\s+-]{6,12}" />
@@ -589,7 +609,7 @@
     window.addEventListener('DOMContentLoaded', handleStickyCTA);
 
     // Form submission handler with validation and loading state
-    const form = document.getElementById('enquiryFormReal');
+    const form = document.getElementById('enquiryFormRealForm');
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzwi2Kh3A8tnWOipqZ2TV0yALUc-c9NFT7_LumjQcRUmSs4Q-OyvC_39Hu_M4lLQi0j/exec';
 
     form.addEventListener('submit', e => {
