@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MAIDZY | Trusted Maid Services in Pune</title>
   <meta name="description" content="Hire verified maids in Pune with Maidzy. Trusted, fully verified housekeeping, cooking, babysitting, elder care, and deep cleaning professionals." />
   <meta name="keywords" content="maid service Pune, housekeeping Pune, babysitting Pune, elder care Pune, cooking service Pune, deep cleaning Pune" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
   <link rel="icon" href="maidzy-icon.png" type="image/png" />
   <style>
-    /* Reset base */
+    /* Reset */
     * {
       box-sizing: border-box;
       scroll-behavior: smooth;
     }
+
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       background: #fff0f6;
       color: #4b235a;
-      line-height: 1.5;
+      line-height: 1.6;
     }
+
     a {
       color: #ff3380;
       text-decoration: none;
       transition: color 0.3s ease;
     }
-    a:hover, a:focus {
+
+    a:hover,
+    a:focus {
       color: #cc2a6e;
       outline: none;
     }
@@ -42,14 +47,22 @@
       padding: 12px 24px;
       box-shadow: 0 3px 8px rgba(255, 51, 153, 0.2);
       z-index: 1000;
-      transition: background 0.3s ease;
     }
 
     /* Animated glowing pulsing logo */
     @keyframes logoPulse {
-      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 5px #ff66b2);}
-      50% { transform: scale(1.1); filter: drop-shadow(0 0 15px #ff3399);}
+      0%,
+      100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 5px #ff66b2);
+      }
+
+      50% {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 15px #ff3399);
+      }
     }
+
     header img.brand-logo {
       height: 110px;
       border-radius: 12px;
@@ -57,6 +70,7 @@
       margin-right: 16px;
       transition: transform 0.3s ease;
     }
+
     header img.brand-logo:hover,
     header img.brand-logo:focus {
       transform: scale(1.15);
@@ -72,6 +86,7 @@
       box-shadow: 0 2px 10px #ffcde2;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .top-icons a img:hover,
     .top-icons a img:focus {
       transform: scale(1.2);
@@ -81,80 +96,362 @@
 
     /* Hero Section */
     .hero-section {
-      max-width: 800px;
-      padding: 60px 20px 40px 20px;
+      max-width: 820px;
+      padding: 70px 20px 40px 20px;
       margin: 0 auto;
       text-align: center;
     }
+
     /* Animated title with fade, slide and subtle hue shift */
     @keyframes fadeSlideIn {
-      0% { opacity: 0; transform: translateY(-20px); }
-      100% { opacity: 1; transform: translateY(0); }
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     @keyframes hueShift {
-      0% { filter: hue-rotate(0deg);}
-      50% { filter: hue-rotate(20deg);}
-      100% { filter: hue-rotate(0deg);}
+      0% {
+        filter: hue-rotate(0deg);
+      }
+
+      50% {
+        filter: hue-rotate(20deg);
+      }
+
+      100% {
+        filter: hue-rotate(0deg);
+      }
     }
+
     .hero-headline {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 3rem;
+      font-family: 'Poppins', 'Montserrat', sans-serif;
+      font-size: 4rem;
       font-weight: 700;
       margin-bottom: 16px;
       color: #d6006e;
       animation: fadeSlideIn 1s ease forwards, hueShift 6s ease-in-out infinite;
+      letter-spacing: 0.06em;
     }
+
     .hero-sub {
-      font-size: 1.17rem;
-      margin-bottom: 28px;
-      max-width: 680px;
+      font-size: 1.25rem;
+      margin-bottom: 32px;
+      max-width: 700px;
       margin-left: auto;
       margin-right: auto;
       color: #661a55;
+      font-weight: 600;
     }
+
     .cta-bar {
       display: flex;
-      gap: 20px;
+      gap: 24px;
       justify-content: center;
       flex-wrap: wrap;
     }
+
     .cta-btn {
       background: linear-gradient(90deg, #ff3399, #ff66b2);
       border: none;
-      border-radius: 25px;
-      padding: 16px 36px;
+      border-radius: 28px;
+      padding: 18px 40px;
       color: #fff;
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       cursor: pointer;
-      box-shadow: 0 6px 12px rgba(255, 51, 153, 0.35);
+      box-shadow: 0 8px 14px rgba(255, 51, 153, 0.4);
+      box-sizing: content-box;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       transition: background 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
     }
-    .cta-btn:hover, .cta-btn:focus {
+
+    .cta-btn:hover,
+    .cta-btn:focus {
       background: linear-gradient(90deg, #cc2a6e, #ff85b5);
-      box-shadow: 0 8px 16px rgba(255, 51, 153, 0.55);
+      box-shadow: 0 10px 20px rgba(255, 51, 153, 0.6);
       outline: none;
     }
+
     .cta-btn.secondary {
       background: #fff;
       color: #ff3399;
-      border: 2.7px solid #ff3399;
+      border: 3px solid #ff3399;
     }
-    .cta-btn.secondary:hover, .cta-btn.secondary:focus {
+
+    .cta-btn.secondary:hover,
+    .cta-btn.secondary:focus {
       color: #cc2a6e;
       border-color: #cc2a6e;
       text-decoration: none;
       outline: none;
     }
 
-    /* ... The rest CSS same as previous versions for services, testimonials, form, footer etc ... */
+    /* Services */
+    .services-section {
+      max-width: 900px;
+      margin: 50px auto 90px;
+      background: #fff;
+      border-radius: 22px;
+      padding: 48px 36px;
+      box-shadow: 0 6px 28px rgba(198, 131, 141, 0.16);
+    }
 
+    .services-title {
+      font-family: 'Poppins', 'Montserrat', sans-serif;
+      font-size: 2.75rem;
+      font-weight: 700;
+      color: #bf1d66;
+      margin-bottom: 44px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+
+    .service-card {
+      background: #ffe6f0;
+      border-radius: 20px;
+      padding: 34px 30px 24px;
+      box-shadow: 0 4px 20px rgba(255, 179, 202, 0.54);
+      margin-bottom: 28px;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease, background 0.3s ease;
+      outline: none;
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .service-card:hover,
+    .service-card:focus {
+      background: #ffcae0;
+      box-shadow: 0 10px 36px rgba(255, 102, 178, 0.66);
+      outline-offset: 4px;
+    }
+
+    .service-emoji {
+      font-size: 3rem;
+      user-select: none;
+      flex-shrink: 0;
+    }
+
+    .service-info {
+      flex-grow: 1;
+    }
+
+    .service-title {
+      font-weight: 800;
+      font-size: 1.45rem;
+      margin-bottom: 14px;
+      letter-spacing: 0.04em;
+    }
+
+    .service-desc {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin: 0;
+      color: #722e62;
+      font-weight: 600;
+    }
+
+    /* Testimonials */
+    .testimonials-section {
+      max-width: 760px;
+      margin: 0 auto 80px;
+      padding: 36px 28px;
+      background: #fff;
+      border-radius: 22px;
+      box-shadow: 0 8px 28px rgba(255, 51, 153, 0.21);
+      text-align: center;
+      font-style: italic;
+      color: #5b2e57;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonials-title {
+      font-family: 'Poppins', 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 2.3rem;
+      color: #d6006e;
+      margin-bottom: 32px;
+      letter-spacing: 0.06em;
+    }
+
+    .testimonial-item {
+      opacity: 0;
+      transform: translateY(38px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      transform-origin: center;
+      max-width: 700px;
+      padding: 0 24px;
+      box-sizing: border-box;
+      user-select: none;
+    }
+
+    .testimonial-item.active {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      position: relative;
+    }
+
+    .testimonial-stars {
+      color: gold;
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+      user-select: none;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.2rem;
+      margin-top: 12px;
+      color: #af2664;
+    }
+
+    /* Contact Form */
+    .form-section {
+      max-width: 470px;
+      margin: 0 auto 80px;
+      background: #fff0f6;
+      padding: 48px 36px;
+      border-radius: 28px;
+      box-shadow: 0 8px 35px rgba(255, 51, 153, 0.21);
+    }
+
+    .form-title {
+      font-family: 'Poppins', 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: #bf1d66;
+      margin-bottom: 40px;
+      text-align: center;
+      letter-spacing: 0.06em;
+    }
+
+    form input,
+    form select {
+      width: 100%;
+      padding: 16px 20px;
+      margin-bottom: 26px;
+      border: 1.7px solid #d7a7c0;
+      border-radius: 12px;
+      font-size: 1.15rem;
+      font-family: 'Montserrat', sans-serif;
+      transition: border-color 0.3s ease;
+      color: #4d3064;
+      font-weight: 600;
+    }
+
+    form input:focus,
+    form select:focus {
+      border-color: #ff3399;
+      outline: none;
+      box-shadow: 0 0 12px #ffb0d0aa;
+    }
+
+    form button {
+      width: 100%;
+      background: linear-gradient(90deg, #ff3399, #ff66b2);
+      border: none;
+      padding: 18px;
+      font-family: 'Poppins', 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: white;
+      border-radius: 32px;
+      cursor: pointer;
+      box-shadow: 0 7px 20px rgba(255, 51, 153, 0.48);
+      transition: background 0.3s ease;
+      user-select: none;
+    }
+
+    form button:hover,
+    form button:focus {
+      background: linear-gradient(90deg, #cc2a6e, #ff85b5);
+      outline: none;
+    }
+
+    form button.loading {
+      cursor: wait;
+      opacity: 0.7;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 28px 12px;
+      background: linear-gradient(90deg, #ff3399, #ff66b2);
+      color: white;
+      font-weight: 600;
+      font-family: 'Poppins', 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      border-radius: 0 0 24px 24px;
+    }
+
+    footer a {
+      color: #ffe0f0;
+      text-decoration: underline;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      color: #fff;
+      outline: none;
+    }
+
+    /* Footer smaller icons */
+    .form-section .contact-info a img {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .form-section .contact-info {
+      gap: 14px;
+      font-size: 1.1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .hero-headline {
+        font-size: 3.2rem;
+      }
+
+      .services-section {
+        padding: 36px 20px;
+      }
+
+      .testimonial-item {
+        max-width: 90%;
+        left: 5%;
+        transform: translateY(0);
+      }
+
+      header {
+        padding: 20px;
+      }
+
+      .form-section {
+        padding: 36px 24px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <div class="brand-row">
@@ -162,27 +459,231 @@
       <span class="site-title">MAIDZY – Maid Services in Pune</span>
     </div>
     <div class="top-icons">
-      <a href="https://wa.me/918796832083" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><img src="whatsapp-logo.png" alt="WhatsApp Logo" /></a>
+      <a href="https://wa.me/918796832083" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><img
+          src="whatsapp-logo.png" alt="WhatsApp Logo" /></a>
       <a href="tel:+918796832083" aria-label="Call Us"><img src="call-logo.png" alt="Call Icon" /></a>
     </div>
   </header>
 
   <section class="hero-section" role="banner">
     <h1 class="hero-headline">Trusted & Verified Maid Services in Pune</h1>
-    <p class="hero-sub">On-demand cleaning, cooking, babysitting, and elder care with fully screened, local, and reliable professionals. Fast booking and dedicated customer support.</p>
+    <p class="hero-sub">On-demand cleaning, cooking, babysitting, and elder care with fully screened, local, and reliable
+      professionals. Fast booking and dedicated customer support.</p>
     <div class="cta-bar" role="navigation" aria-label="Call to action buttons">
-      <a href="#enquiryFormReal" class="cta-btn">Book Your Maid Today</a>
+      <a href="#enquiryFormRealForm" class="cta-btn">Book Your Maid Today</a>
       <a href="tel:+918796832083" class="cta-btn secondary">Call 8796832083</a>
     </div>
     <div style="font-size:.98em; color:#aa1e77;">
-      <img src="whatsapp-logo.png" alt="WhatsApp" style="height:20px;vertical-align:middle;" /> Chat on WhatsApp: <strong>8796832083</strong>
+      <img src="whatsapp-logo.png" alt="WhatsApp" style="height:20px;vertical-align:middle;" /> Chat on WhatsApp:
+      <strong>8796832083</strong>
     </div>
   </section>
 
-  <!-- Add the rest of your website content (services, testimonials, form, footer) here, as before -->
+  <section class="services-section" aria-label="Our Services">
+    <h2 class="services-title">Our Services</h2>
+    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="cleaning-desc" role="region"
+      aria-label="Daily Home Cleaning">
+      <div class="service-emoji" aria-hidden="true">🧹</div>
+      <div class="service-info">
+        <h3 class="service-title">Daily Home Cleaning</h3>
+        <p id="cleaning-desc" class="service-desc">Routine sweeping, mopping, dusting for all rooms. Flexible timing, eco-safe products,
+          and polite housekeepers ensure a sparkling home every day.</p>
+      </div>
+    </article>
+
+    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="cooking-desc" role="region"
+      aria-label="Cooking">
+      <div class="service-emoji" aria-hidden="true">🍳</div>
+      <div class="service-info">
+        <h3 class="service-title">Cooking</h3>
+        <p id="cooking-desc" class="service-desc">Home-style cooking for all cuisines, including veg and non-veg, breakfast, lunch,
+          and dinner. Recipe customization and grocery help available.</p>
+      </div>
+    </article>
+
+    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="babysitting-desc" role="region"
+      aria-label="Babysitting and Childcare">
+      <div class="service-emoji" aria-hidden="true">👶</div>
+      <div class="service-info">
+        <h3 class="service-title">Babysitting & Childcare</h3>
+        <p id="babysitting-desc" class="service-desc">Experienced, vetted babysitters for infants and children. Includes feeding,
+          playing, homework support, and hygiene.</p>
+      </div>
+    </article>
+
+    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="eldercare-desc" role="region"
+      aria-label="Elder Care">
+      <div class="service-emoji" aria-hidden="true">👵</div>
+      <div class="service-info">
+        <h3 class="service-title">Elder Care</h3>
+        <p id="eldercare-desc" class="service-desc">Compassionate elder care including bathing, meal prep, light exercise,
+          and companionship. On-demand nurse care available.</p>
+      </div>
+    </article>
+
+    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="deepclean-desc" role="region"
+      aria-label="Deep Cleaning">
+      <div class="service-emoji" aria-hidden="true">🧼</div>
+      <div class="service-info">
+        <h3 class="service-title">Deep Cleaning</h3>
+        <p id="deepclean-desc" class="service-desc">Festive or move-in/out deep cleaning including sofa, carpet, kitchen degreasing,
+          bathroom sanitization with advanced equipment.</p>
+      </div>
+    </article>
+
+    <article class="service-card" tabindex="0" aria-expanded="false" aria-controls="housekeeping-desc" role="region"
+      aria-label="Housekeeping and Pantry">
+      <div class="service-emoji" aria-hidden="true">🛋️</div>
+      <div class="service-info">
+        <h3 class="service-title">Housekeeping + Pantry</h3>
+        <p id="housekeeping-desc" class="service-desc">Complete household management: organizing, laundry, ironing,
+          errands, and pantry services for families, bachelors, and offices.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="testimonials-section" aria-label="Client Testimonials">
+    <h2 class="testimonials-title">What Our Clients Say</h2>
+    <div id="testimonialCarousel" role="list">
+      <blockquote class="testimonial-item active" role="listitem">
+        <div class="testimonial-stars" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+        <p>"Maidzy helped me find a caring, punctual maid – started within 24 hours. Highly recommend!"</p>
+        <footer class="testimonial-author">- Priya S.</footer>
+      </blockquote>
+      <blockquote class="testimonial-item" role="listitem">
+        <div class="testimonial-stars" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+        <p>"Got professional, polite staff for my parents. Great support from the Maidzy team."</p>
+        <footer class="testimonial-author">- Ramesh K.</footer>
+      </blockquote>
+      <blockquote class="testimonial-item" role="listitem">
+        <div class="testimonial-stars" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+        <p>"Quick booking & thorough background checks gave me peace of mind."</p>
+        <footer class="testimonial-author">- Neha M.</footer>
+      </blockquote>
+      <blockquote class="testimonial-item" role="listitem">
+        <div class="testimonial-stars" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+        <p>"Booking via WhatsApp was simple & Maidzy responded quickly. The maid is respectful and skilled."</p>
+        <footer class="testimonial-author">- Vinayak D.</footer>
+      </blockquote>
+      <blockquote class="testimonial-item" role="listitem">
+        <div class="testimonial-stars" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+        <p>"Our babysitter handles our kids' routines wonderfully. Super happy!"</p>
+        <footer class="testimonial-author">- Farah P.</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="form-section" id="enquiryFormRealForm" aria-label="Enquiry Form">
+    <h2 class="form-title">Request a Maid in Pune</h2>
+    <p style="color:#7c417a; margin-bottom:15px;">
+      Fill the form below – Our team will call within 30 minutes during working hours!<br />
+      For instant help, <a href="tel:+918796832083" class="contact-link" style="color:#ff7bb5;font-weight:700;">Call 8796832083</a> or
+      <a href="https://wa.me/918796832083" class="contact-link" style="color:green;font-weight:700;">WhatsApp</a>
+    </p>
+    <form id="enquiryFormReal" novalidate>
+      <input id="name" name="name" type="text" placeholder="Full Name" required aria-required="true" />
+      <input id="phone" name="phone" type="tel" placeholder="Phone Number" maxlength="12" required aria-required="true"
+        pattern="[0-9\s+-]{6,12}" />
+      <input id="location" name="location" type="text" placeholder="Your Area in Pune" required aria-required="true" />
+      <select id="service" name="service" required aria-required="true">
+        <option value="">Select Service Needed</option>
+        <option>Daily Cleaning</option>
+        <option>Cooking</option>
+        <option>Babysitting</option>
+        <option>Elder Care</option>
+        <option>Deep Cleaning</option>
+        <option>Housekeeping</option>
+      </select>
+      <button type="submit">Submit Request</button>
+    </form>
+    <div class="contact-info" style="margin-top:18px;">
+      <a href="tel:+918796832083" class="contact-link"><img src="call-logo.png" alt="Call icon" />+91 8796832083</a>
+      <a href="https://wa.me/918796832083" target="_blank" class="contact-link"><img src="whatsapp-logo.png" alt="WhatsApp icon" />Chat on
+        WhatsApp</a>
+      <span style="color:#c2185b;margin-left:14px;">Working Hours: 9am–9pm, All Days</span>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Maidzy. All Rights Reserved. | <a href="privacy-policy.html" style="color:#ff82bd; text-decoration:none;">Privacy Policy</a>
+  </footer>
 
   <script>
-    // JS as in previous versions (accordion, testimonial carousel, form submission with loading state etc.)
+    // Accordion toggling
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const expanded = card.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.service-card').forEach(c => {
+          c.setAttribute('aria-expanded', 'false');
+          c.querySelector('.service-desc').style.display = 'none';
+        });
+        if (!expanded) {
+          card.setAttribute('aria-expanded', 'true');
+          card.querySelector('.service-desc').style.display = 'block';
+        }
+      });
+      card.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          card.click();
+        }
+      });
+    });
+
+    // Testimonials carousel
+    const testimonials = document.querySelectorAll('.testimonial-item');
+    let testimonialIndex = 0;
+    function showTestimonial(i) {
+      testimonials.forEach((t, idx) => {
+        t.classList.toggle('active', idx === i);
+      });
+    }
+    showTestimonial(testimonialIndex);
+    setInterval(() => {
+      testimonialIndex++;
+      if (testimonialIndex >= testimonials.length) testimonialIndex = 0;
+      showTestimonial(testimonialIndex);
+    }, 7000);
+
+    // Sticky CTA for mobile
+    const stickyCTA = document.querySelector('.sticky-cta-bar');
+    function handleStickyCTA() {
+      stickyCTA.style.display = window.innerWidth <= 680 ? 'flex' : 'none';
+    }
+    window.addEventListener('resize', handleStickyCTA);
+    window.addEventListener('DOMContentLoaded', handleStickyCTA);
+
+    // Form submission handler with loading state
+    const form = document.getElementById('enquiryFormReal');
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzwi2Kh3A8tnWOipqZ2TV0yALUc-c9NFT7_LumjQcRUmSs4Q-OyvC_39Hu_M4lLQi0j/exec';
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        alert('Please fill all required fields correctly.');
+        return;
+      }
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.classList.add('loading');
+      btn.textContent = 'Submitting...';
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          if (response.ok) {
+            alert('✅ Success! Your enquiry has been submitted.');
+            form.reset();
+          } else {
+            alert('⚠️ Submission failed. Please try again later.');
+          }
+        })
+        .catch(err => alert('⚠️ Error: ' + err.message))
+        .finally(() => {
+          btn.disabled = false;
+          btn.classList.remove('loading');
+          btn.textContent = 'Submit Request';
+        });
+    });
   </script>
 </body>
+
 </html>
