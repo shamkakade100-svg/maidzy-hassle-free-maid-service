@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maidzy | Hire Verified Maids in Pune</title>
 
+<section style="background:#ffe4f1; padding:20px; text-align:center; border-radius:12px; margin:20px;">
+  <h2 style="color:#d63384;">Our Service Cost</h2>
+  <p style="font-size:18px; margin:10px 0;">One-Time Registration Fee: <b>₹500</b></p>
+  <p style="font-size:18px; margin:10px 0;">Monthly Service Charge: <b>₹300</b></p>
+  <p style="color:#555;">Simple, Transparent, Hassle-Free Pricing</p>
+</section>
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -12,6 +19,11 @@
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#ec4899">
   <link rel="icon" href="maidzy-icon.png" type="image/png">
+  <header>
+  <img src="maidzy-icon.png" alt="MAIDZY Logo" style="height:60px;">
+  <h1>MAIDZY</h1>
+</header>
+
 
   <style>
     body { font-family: 'Poppins', sans-serif; margin: 0; background:#fff; color:#1e293b; }
