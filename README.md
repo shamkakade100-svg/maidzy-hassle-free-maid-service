@@ -220,3 +220,6 @@
 
 </body>
 </html>
+<header>
+  <img src="maidzy-icon.png" alt="Maidzy Logo" style="max-width:100%; height:200px;">
+</header>
