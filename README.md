@@ -5,68 +5,229 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MAIDZY | Hassle-Free Maid Service in Pune</title>
   <style>
-    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #fff0f6; }
-    header { background: #f48fb1; padding: 15px; text-align: center; }
-    header img { height: 90px; }
-    section { padding: 30px 20px; text-align: center; }
-    h1 { color: #d63384; font-size: 36px; margin-bottom: 10px; }
-    p { color: #444; font-size: 18px; margin-bottom: 25px; }
-    .cta { background: #d63384; color: white; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; }
-    .cta:hover { background: #ad1457; }
-    .services { background: #ffe6f0; padding: 30px; margin: 20px; border-radius: 12px; }
-    .services h2 { color: #c2185b; }
-    .services ul { list-style: none; padding: 0; font-size: 18px; color: #444; }
-    .services li { padding: 6px 0; }
-    .form-box { background: #fff; padding: 25px; margin: 20px auto; max-width: 450px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    .form-box h2 { color: #c2185b; margin-bottom: 15px; }
-    input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 6px; }
-    button { background: #d63384; color: white; padding: 12px 20px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; }
-    button:hover { background: #ad1457; }
-    footer { background: #c2185b; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff0f6;
+      color: #333;
+    }
+    header {
+      background: #ff4d94;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    header img {
+      height: 80px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    header h1 {
+      display: inline-block;
+      font-size: 2.5rem;
+      font-weight: bold;
+      vertical-align: middle;
+      margin: 0;
+    }
+    nav {
+      background: #ff80b5;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    section h2 {
+      color: #ff3385;
+    }
+    .services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #ff3385;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .form-container label {
+      font-weight: bold;
+      color: #ff3385;
+    }
+    .form-container input, 
+    .form-container select, 
+    .form-container textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .form-container button {
+      background: #ff3385;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .form-container button:hover {
+      background: #e60073;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #ff80b5;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <!-- Header with Logo -->
+
+  <!-- HEADER -->
   <header>
-    <img src="maidzy-icon.png" alt="MAIDZY Logo" />
+    <img src="maidzy-icon.png" alt="Maidzy Logo">
+    <h1>MAIDZY</h1>
   </header>
 
-  <!-- Hero Section -->
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#enquiry">Enquiry</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO -->
   <section>
-    <h1>Hire Verified Maids in Pune</h1>
-    <p>Daily Cleaning · Cooking · Babysitting · More</p>
-    <a class="cta" href="https://wa.me/918796832083?text=Hi,%20I%20want%20to%20book%20a%20maid%20in%20Pune%20via%20MAIDZY" target="_blank">📲 Book on WhatsApp</a>
+    <h2>Hassle-Free Maid Service in Pune</h2>
+    <p>Hire verified maids for cleaning, cooking, babysitting, and more.</p>
+    <a href="https://wa.me/918796832083?text=Hi,%20I%20want%20to%20book%20a%20maid%20via%20MAIDZY" target="_blank" style="background:#ff3385; color:white; padding:12px 20px; border-radius:6px; text-decoration:none; font-weight:bold;">📲 Book on WhatsApp</a>
   </section>
 
-  <!-- Services and Cost -->
-  <section class="services">
-    <h2>Our Services & Costs</h2>
-    <ul>
-      <li>Daily Cleaning – ₹3000 / month</li>
-      <li>Cooking – ₹4000 / month</li>
-      <li>Babysitting – ₹5000 / month</li>
-      <li>Full-time Maid – ₹9000 / month</li>
-    </ul>
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Cleaning</h3>
+        <p>Daily household cleaning with trusted staff.</p>
+      </div>
+      <div class="card">
+        <h3>Cooking</h3>
+        <p>Home-style cooking for your family’s needs.</p>
+      </div>
+      <div class="card">
+        <h3>Babysitting</h3>
+        <p>Experienced babysitters to care for your child.</p>
+      </div>
+      <div class="card">
+        <h3>Elderly Care</h3>
+        <p>Gentle care and support for senior citizens.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Enquiry Form -->
-  <section>
-    <div class="form-box">
-      <h2>Enquire Now</h2>
+  <!-- PRICING -->
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <p>Transparent and affordable plans:</p>
+    <div class="services">
+      <div class="card">
+        <h3>Cleaning</h3>
+        <p>₹3,000 / month</p>
+      </div>
+      <div class="card">
+        <h3>Cooking</h3>
+        <p>₹4,500 / month</p>
+      </div>
+      <div class="card">
+        <h3>Babysitting</h3>
+        <p>₹6,000 / month</p>
+      </div>
+      <div class="card">
+        <h3>Elderly Care</h3>
+        <p>₹7,500 / month</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENQUIRY FORM -->
+  <section id="enquiry">
+    <h2>Send an Enquiry</h2>
+    <div class="form-container">
       <form action="https://script.google.com/macros/s/AKfycbyGCeiAhaCof5FjpKGOQCFFIyXqm1aUj2lo5Ve94Y5ZkhOBOvoFwNaFpVnnfEirfCsG/exec" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <input type="text" name="phone" placeholder="Your Phone Number" required />
-        <input type="text" name="location" placeholder="Your Location in Pune" required />
-        <textarea name="message" placeholder="Your Requirements" rows="4" required></textarea>
+        <label>Name:</label>
+        <input type="text" name="name" required>
+        
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        
+        <label>Phone:</label>
+        <input type="tel" name="phone" required>
+        
+        <label>Location:</label>
+        <select name="location" required>
+          <option value="">Select Your Location</option>
+          <option value="Kothrud">Kothrud</option>
+          <option value="Baner">Baner</option>
+          <option value="Hinjewadi">Hinjewadi</option>
+          <option value="Hadapsar">Hadapsar</option>
+          <option value="Viman Nagar">Viman Nagar</option>
+        </select>
+        
+        <label>Message:</label>
+        <textarea name="message" rows="4" required></textarea>
+        
         <button type="submit">Submit Enquiry</button>
       </form>
     </div>
   </section>
-<!-- refresh -->
-  <!-- Footer -->
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Pune, Maharashtra</p>
+    <p>📧 Email: <a href="mailto:shamraokakade96@gmail.com">shamraokakade96@gmail.com</a></p>
+    <p>📲 WhatsApp: <a href="https://wa.me/918796832083" target="_blank">+91 87968 32083</a></p>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    © <script>document.write(new Date().getFullYear())</script> MAIDZY | Hassle-Free Maid Service
+    <p>© <script>document.write(new Date().getFullYear())</script> MAIDZY | Hassle-Free Maid Service in Pune</p>
   </footer>
+
 </body>
 </html>
