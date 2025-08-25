@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Maidzy - Trusted Maid Services in Pune. Hire verified maids for cleaning, cooking, babysitting, elder care, and housekeeping. Quick booking, safe, and professional.">
-  <meta name="keywords" content="maid service Pune, cook Pune, babysitter Pune, caretaker Pune, house help Maharashtra, verified maids Pune">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hire Verified Maids in Pune | MAIDZY</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="maidzy-icon.png">
+  <meta name="description" content="Maidzy - Trusted Maid Services in Pune. Hire verified maids for cleaning, cooking, babysitting, elder care, and housekeeping. Quick booking, safe, and professional." />
+  <meta name="keywords" content="maid service Pune, cook Pune, babysitter Pune, caretaker Pune, house help Maharashtra, verified maids Pune" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;500&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="maidzy-icon.png" />
   <style>
     :root {
       --primary: #ff3399;
@@ -57,7 +57,6 @@
         header img.brand-logo{height:58px;}
         header .site-title {font-size:1.26rem;}
     }
-
     /* Hero */
     .hero-section {
       margin:30px auto 0; max-width:660px; text-align:center; padding:20px 12px 10px;
@@ -79,6 +78,8 @@
       transition:.15s; text-decoration: none;
     }
     .cta-btn:hover {background:linear-gradient(90deg, #e60073, #ff85b5);}
+    /* Loading state style */
+    .loading { opacity: 0.6; cursor: wait; }
     /* Mobile sticky CTA */
     @media(max-width:600px){
       .sticky-cta-bar {
@@ -91,7 +92,6 @@
       }
       .sticky-cta-btn:active {background:#ffdbe9;}
     }
-
     /* Service section */
     .services-section {
       background: var(--primary-light);
@@ -213,7 +213,7 @@
     .form-title{
       font:700 1.45rem var(--heading-font); color:var(--primary); margin-bottom:10px;
     }
-    form#enquiryForm{max-width:370px;margin:0 auto;}
+    form#enquiryFormRealForm{max-width:370px;margin:0 auto;}
     input, select {
       width: 100%; padding: 13px; margin: 10px 0 16px;
       border-radius: 8px; border: 1px solid #ccc; transition: 0.2s;
@@ -228,6 +228,10 @@
       box-shadow:0 2px 8px #ffd9ec;
     }
     button[type="submit"]:hover {background:linear-gradient(90deg, #e60073, #ff85b5);}
+    button[type="submit"].loading {
+      cursor: wait;
+      opacity: 0.6;
+    }
     /* Contact Info visible */
     .contact-info{
       margin:20px 0 0;color:#a1165b;font-weight:600; font-size:1.02em;
@@ -242,7 +246,6 @@
       color: #fff; text-align: center; padding: 15px; margin-top: 18px;
       border-radius: 0 0 12px 12px; font-size:.96em;
     }
-
     /* Responsive */
     @media(max-width:780px){
       .services-section,
@@ -262,165 +265,178 @@
   <!-- Header Section -->
   <header>
     <div class="brand-row">
-      <img src="maidzy-icon.png" class="brand-logo" alt="Maidzy Logo">
-      <span class="site-title">MAIDZY – Hassle-Free Maids for Pune Homes</span>
+      <img src="maidzy-icon.png" class="brand-logo" alt="Maidzy Logo" />
+      <span class="site-title">MAIDZY – Maid Services in Pune</span>
     </div>
     <div class="top-icons">
-      <a href="https://wa.me/918796832083" target="_blank"><img src="whatsapp-logo.png" alt="WhatsApp"></a>
-      <a href="tel:+918796832083"><img src="call-logo.png" alt="Call"></a>
+      <a href="https://wa.me/918796832083" target="_blank" aria-label="WhatsApp Chat"><img src="whatsapp-logo.png" alt="WhatsApp Logo" /></a>
+      <a href="tel:+918796832083" aria-label="Call Us"><img src="call-logo.png" alt="Call Icon" /></a>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero-section">
-    <h1 class="hero-headline">Hire Trusted &amp; Verified Maids in Pune</h1>
-    <div class="hero-sub">On-demand cleaning, cooking, babysitting, and elderly care with fully screened and reliable professionals. Instant inquiry, fast placement, and top-rated service quality.</div>
-    <div class="cta-bar">
-      <a href="#enquiryForm" class="cta-btn">Book a Maid Now</a>
+  <section class="hero-section" role="banner">
+    <h1 class="hero-headline">Trusted & Verified Maid Services in Pune</h1>
+    <p class="hero-sub">On-demand cleaning, cooking, babysitting, and elder care with fully screened, local, and reliable professionals. Fast booking and dedicated customer support.</p>
+    <div class="cta-bar" role="navigation" aria-label="Call to action buttons">
+      <a href="#enquiryFormRealForm" class="cta-btn">Book Your Maid Today</a>
       <a href="tel:+918796832083" class="cta-btn" style="background:#fff;color:#ff1097;border:1.5px solid #ff1199;">Call 8796832083</a>
     </div>
     <div style="font-size:.98em; color:#aa1e77;">
-      <img src="whatsapp-logo.png" alt="WhatsApp" style="height:20px;vertical-align:middle;"> Chat on WhatsApp: <b>8796832083</b>
+      <img src="whatsapp-logo.png" alt="WhatsApp" style="height:20px;vertical-align:middle;" /> Chat on WhatsApp: <strong>8796832083</strong>
     </div>
   </section>
 
-  <!-- Sticky CTA for Mobile -->
-  <div class="sticky-cta-bar" style="display:none;">
-      <a href="#enquiryForm" class="sticky-cta-btn">Book Maid Now &rarr;</a>
+  <!-- Sticky CTA Mobile -->
+  <div class="sticky-cta-bar" aria-hidden="true" style="display:none;">
+    <a href="#enquiryFormRealForm" class="sticky-cta-btn">Book Maid Now &rarr;</a>
   </div>
 
   <!-- Why Choose Us -->
-  <section class="why-section">
+  <section class="why-section" aria-label="Why choose Maidzy">
     <h2 class="why-title">Why Choose Maidzy?</h2>
     <div class="why-features">
-      <div class="why-box"><span class="why-emoji">✅</span> Verified &amp; Trusted Maids </div>
-      <div class="why-box"><span class="why-emoji">⚡</span> Lightning-Fast Booking </div>
-      <div class="why-box"><span class="why-emoji">💯</span> Reliability &amp; Professionalism </div>
-      <div class="why-box"><span class="why-emoji">📍</span> Only in Pune, Local Support </div>
-      <div class="why-box"><span class="why-emoji">🛡️</span> Safety-Checked Staff </div>
-      <div class="why-box"><span class="why-emoji">📞</span> Friendly On-Call Assistance </div>
+      <div class="why-box"><span class="why-emoji" aria-hidden="true">✅</span> Verified &amp; Trusted Maids </div>
+      <div class="why-box"><span class="why-emoji" aria-hidden="true">⚡</span> Fast & Simple Booking </div>
+      <div class="why-box"><span class="why-emoji" aria-hidden="true">💯</span> Reliable & Professional </div>
+      <div class="why-box"><span class="why-emoji" aria-hidden="true">📍</span> Local Service in Pune </div>
+      <div class="why-box"><span class="why-emoji" aria-hidden="true">🛡️</span> Safety & Background Checks </div>
+      <div class="why-box"><span class="why-emoji" aria-hidden="true">📞</span> Friendly Support & Assistance </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section class="services-section">
-    <h2 class="services-title">What Can We Help You With?</h2>
-    <div class="service-accordion" id="serviceAccordion">
-      <div class="service-card" data-sid="cleaning">
+  <section class="services-section" aria-label="Our Services">
+    <h2 class="services-title">Our Services</h2>
+    <div class="service-accordion" id="serviceAccordion" role="list">
+
+      <div class="service-card" role="listitem" tabindex="0" aria-expanded="false" aria-controls="cleaning-details" aria-label="Daily Home Cleaning" data-sid="cleaning">
         <div class="service-header">
-          <div class="service-emoji">🧹</div>
+          <div class="service-emoji" aria-hidden="true">🧹</div>
           <div class="card-title">Daily Home Cleaning</div>
-          <span class="expand-icon">&#8250;</span>
+          <span class="expand-icon" aria-hidden="true">&#8250;</span>
         </div>
-        <div class="service-details">
-          Routine sweeping, mopping, dusting for all rooms. Flexible timing, eco-safe products, and polite housekeepers ensure a sparkling home every day. <br>
-          <b>Inclusions:</b> Living room, kitchen, bathrooms, bedrooms.<br>
-          <b>Frequency:</b> Daily, Alternate-day or Custom as per need.
+        <div class="service-details" id="cleaning-details" hidden>
+          Routine sweeping, mopping, dusting for all rooms. Flexible timing, eco-safe products, and polite housekeepers ensure a sparkling home every day.<br />
+          <strong>Includes:</strong> Living room, kitchen, bathrooms, bedrooms.<br />
+          <strong>Frequency:</strong> Daily, alternate-day, or custom.
         </div>
       </div>
-      <div class="service-card" data-sid="cooking">
+
+      <div class="service-card" role="listitem" tabindex="0" aria-expanded="false" aria-controls="cooking-details" aria-label="Cooking" data-sid="cooking">
         <div class="service-header">
-          <div class="service-emoji">🍳</div>
+          <div class="service-emoji" aria-hidden="true">🍳</div>
           <div class="card-title">Cooking</div>
-          <span class="expand-icon">&#8250;</span>
+          <span class="expand-icon" aria-hidden="true">&#8250;</span>
         </div>
-        <div class="service-details">
-          Home-style cooking for all cuisines, veg/non-veg, breakfast, lunch, and dinner. Recipe customization and grocery help available.<br>
-          <b>Inclusions:</b> Meal prep, basic kitchen cleaning.<br>
-          <b>Frequency:</b> One-time, Daily, or Weekly options.
+        <div class="service-details" id="cooking-details" hidden>
+          Home-style cooking for all cuisines, veg and non-veg, including breakfast, lunch, and dinner.<br />
+          <strong>Includes:</strong> Meal prep, kitchen cleaning.<br />
+          <strong>Frequency:</strong> One-time, daily, or weekly.
         </div>
       </div>
-      <div class="service-card" data-sid="babysitting">
+
+      <div class="service-card" role="listitem" tabindex="0" aria-expanded="false" aria-controls="babysitting-details" aria-label="Babysitting and Childcare" data-sid="babysitting">
         <div class="service-header">
-          <div class="service-emoji">👶</div>
+          <div class="service-emoji" aria-hidden="true">👶</div>
           <div class="card-title">Babysitting &amp; Childcare</div>
-          <span class="expand-icon">&#8250;</span>
+          <span class="expand-icon" aria-hidden="true">&#8250;</span>
         </div>
-        <div class="service-details">
-          Excellently trained, background-checked babysitters for infants & children. <br>
-          <b>Inclusions:</b> Feeding, playing, homework, hygiene, school escort.<br>
-          <b>Timings:</b> Full-time, part-time, or hourly.
+        <div class="service-details" id="babysitting-details" hidden>
+          Experienced, vetted babysitters for infants and children.<br />
+          <strong>Includes:</strong> Feeding, playing, homework, hygiene.<br />
+          <strong>Timings:</strong> Full-time, part-time, hourly.
         </div>
       </div>
-      <div class="service-card" data-sid="elder">
+
+      <div class="service-card" role="listitem" tabindex="0" aria-expanded="false" aria-controls="eldercare-details" aria-label="Elder Care" data-sid="elder">
         <div class="service-header">
-          <div class="service-emoji">👵</div>
+          <div class="service-emoji" aria-hidden="true">👵</div>
           <div class="card-title">Elder Care</div>
-          <span class="expand-icon">&#8250;</span>
+          <span class="expand-icon" aria-hidden="true">&#8250;</span>
         </div>
-        <div class="service-details">
-          Compassionate support for seniors: daily help, bathing-hygiene, meal prep, light exercise, and companionship.<br>
-          <b>On-demand nurse care available.</b>
+        <div class="service-details" id="eldercare-details" hidden>
+          Compassionate support: bathing, meal prep, light exercise, companionship.<br />
+          <strong>On-demand nurse care available.</strong>
         </div>
       </div>
-      <div class="service-card" data-sid="deepclean">
+
+      <div class="service-card" role="listitem" tabindex="0" aria-expanded="false" aria-controls="deepclean-details" aria-label="Deep Cleaning" data-sid="deepclean">
         <div class="service-header">
-          <div class="service-emoji">🧼</div>
+          <div class="service-emoji" aria-hidden="true">🧼</div>
           <div class="card-title">Deep Cleaning</div>
-          <span class="expand-icon">&#8250;</span>
+          <span class="expand-icon" aria-hidden="true">&#8250;</span>
         </div>
-        <div class="service-details">
-          Festive or move-in/move-out cleaning for every nook and cranny.<br>
-          <b>Includes:</b> Sofa, carpet, kitchen degreasing, bathroom sanitization.<br>
-          Advanced equipment on request.
+        <div class="service-details" id="deepclean-details" hidden>
+          Festive or move-in/move-out cleaning for every nook and cranny.<br />
+          <strong>Includes:</strong> Sofa, carpet, kitchen degreasing, bathroom sanitization.<br />
+          Advanced equipment available.
         </div>
       </div>
-      <div class="service-card" data-sid="housekeeping">
+
+      <div class="service-card" role="listitem" tabindex="0" aria-expanded="false" aria-controls="housekeeping-details" aria-label="Housekeeping and Pantry" data-sid="housekeeping">
         <div class="service-header">
-          <div class="service-emoji">🛋️</div>
+          <div class="service-emoji" aria-hidden="true">🛋️</div>
           <div class="card-title">Housekeeping + Pantry</div>
-          <span class="expand-icon">&#8250;</span>
+          <span class="expand-icon" aria-hidden="true">&#8250;</span>
         </div>
-        <div class="service-details">
-          Total household management: organizing, laundry, ironing, running errands, basic pantry management.<br>
-          <b>Suites:</b> Families, bachelors, offices & rental apartments.
+        <div class="service-details" id="housekeeping-details" hidden>
+          Complete household management: organizing, laundry, ironing, errands, pantry.<br />
+          Suitable for families, bachelors, offices, rental apartments.
         </div>
       </div>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section class="testimonials-section">
+  <section class="testimonials-section" aria-label="Client Testimonials">
     <h2 class="testimonials-title">What Our Clients Say</h2>
-    <div class="testimonial-carousel" id="testimonialCarousel">
-      <div class="testimonial-item active">
-        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-        <p>"Maidzy helped me find a caring, punctual maid—she started within 24 hours. Highly recommend!"</p>
-        <div class="testimonial-author">- Priya S.</div>
+    <div class="testimonial-carousel" id="testimonialCarousel" role="list">
+      <div class="testimonial-item active" role="listitem">
+        <div class="testimonial-stars" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+        <blockquote>"Maidzy helped me find a caring, punctual maid—she started within 24 hours. Highly recommend!"</blockquote>
+        <cite class="testimonial-author">- Priya S.</cite>
       </div>
-      <div class="testimonial-item">
-        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-        <p>"We needed both a cook and cleaner for our parents. Got professional, polite staff and great support from the team."</p>
-        <div class="testimonial-author">- Ramesh K.</div>
+      <div class="testimonial-item" role="listitem">
+        <div class="testimonial-stars" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+        <blockquote>"We needed both a cook and cleaner for our parents. Got professional, polite staff and great support from the team."</blockquote>
+        <cite class="testimonial-author">- Ramesh K.</cite>
       </div>
-      <div class="testimonial-item">
-        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-        <p>"The quick booking process and thorough background check gave us peace of mind. Service is truly hassle-free."</p>
-        <div class="testimonial-author">- Neha M.</div>
+      <div class="testimonial-item" role="listitem">
+        <div class="testimonial-stars" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+        <blockquote>"The quick booking process and thorough background check gave us peace of mind. Service is truly hassle-free."</blockquote>
+        <cite class="testimonial-author">- Neha M.</cite>
       </div>
-      <div class="testimonial-item">
-        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-        <p>"Booking via WhatsApp was simple, and Maidzy responded instantly. The maid sent is respectful and skilled."</p>
-        <div class="testimonial-author">- Vinayak D.</div>
+      <div class="testimonial-item" role="listitem">
+        <div class="testimonial-stars" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+        <blockquote>"Booking via WhatsApp was simple, and Maidzy responded instantly. The maid sent is respectful and skilled."</blockquote>
+        <cite class="testimonial-author">- Vinayak D.</cite>
       </div>
-      <div class="testimonial-item">
-        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-        <p>"Our babysitter interacts wonderfully with our two kids and manages their routines well. Super happy!"</p>
-        <div class="testimonial-author">- Farah P.</div>
+      <div class="testimonial-item" role="listitem">
+        <div class="testimonial-stars" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+        <blockquote>"Our babysitter interacts wonderfully with our two kids and manages their routines well. Super happy!"</blockquote>
+        <cite class="testimonial-author">- Farah P.</cite>
       </div>
     </div>
-    <div class="carousel-btns" id="testimonialDots"></div>
+    <div class="carousel-btns" id="testimonialDots" role="tablist"></div>
   </section>
 
   <!-- Booking Form Section -->
-  <section class="form-section" id="enquiryForm">
+  <section class="form-section" id="enquiryFormRealForm" aria-label="Enquiry Form">
     <h2 class="form-title">Request a Maid in Pune</h2>
-    <p style="color:#7c417a; margin-bottom:15px;">Fill the form below – Our team will call you within 30 minutes on working hours!<br>For instant help, <a href="tel:+918796832083" class="contact-link" style="color:#ff7bb5;font-weight:700;">Call 8796832083</a> or <a href="https://wa.me/918796832083" class="contact-link" style="color:green;font-weight:700;">WhatsApp</a></p>
+    <p style="color:#7c417a; margin-bottom:15px;">
+      Fill the form below – Our team will call within 30 minutes during working hours!<br />
+      For instant help, <a href="tel:+918796832083" class="contact-link" style="color:#ff7bb5;font-weight:700;">Call 8796832083</a> or <a href="https://wa.me/918796832083" class="contact-link" style="color:green;font-weight:700;">WhatsApp</a>
+    </p>
     <form id="enquiryFormReal">
-      <input type="text" name="name" placeholder="Full Name" required>
-      <input type="tel" name="phone" placeholder="Phone Number" maxlength="12" required>
-      <input type="text" name="location" placeholder="Your Area in Pune" required>
-      <select name="service" required>
+      <label for="name" style="display:none;">Full Name</label>
+      <input id="name" type="text" name="name" placeholder="Full Name" required aria-required="true" />
+      <label for="phone" style="display:none;">Phone Number</label>
+      <input id="phone" type="tel" name="phone" placeholder="Phone Number" maxlength="12" required aria-required="true" />
+      <label for="location" style="display:none;">Your Area in Pune</label>
+      <input id="location" type="text" name="location" placeholder="Your Area in Pune" required aria-required="true" />
+      <label for="service" style="display:none;">Select Service Needed</label>
+      <select id="service" name="service" required aria-required="true">
         <option value="">Select Service Needed</option>
         <option>Daily Cleaning</option>
         <option>Cooking</option>
@@ -432,77 +448,111 @@
       <button type="submit">Submit Request</button>
     </form>
     <div class="contact-info" style="margin-top:18px;">
-      <a href="tel:+918796832083" class="contact-link"><img src="call-logo.png" alt="Call">+91 8796832083</a>
-      <a href="https://wa.me/918796832083" target="_blank" class="contact-link"><img src="whatsapp-logo.png" alt="WhatsApp">Chat WhatsApp</a>
+      <a href="tel:+918796832083" class="contact-link"><img src="call-logo.png" alt="Call icon" />+91 8796832083</a>
+      <a href="https://wa.me/918796832083" target="_blank" class="contact-link"><img src="whatsapp-logo.png" alt="WhatsApp icon" />Chat on WhatsApp</a>
       <span style="color:#c2185b;margin-left:14px;">Working Hours: 9am–9pm, All Days</span>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 Maidzy. All Rights Reserved. | Designed & developed with ♥️ in Pune.
+    &copy; 2025 Maidzy. All Rights Reserved. | <a href="/privacy-policy.html" style="color:#ffd6eb; text-decoration:none;">Privacy Policy</a>
   </footer>
 
-  <!-- Scripts: Accordion, Testimonials, Form, Sticky CTA -->
+  <!-- Scripts -->
   <script>
-    // Accordion for service details
-    document.querySelectorAll('.service-card').forEach(card=>{
-      card.addEventListener('click', function(){
-        document.querySelectorAll('.service-card').forEach(other=>{
-          if(other!==card)other.classList.remove('active')
+    // Accordion with ARIA Expand/Collapse
+    const serviceCards = document.querySelectorAll(".service-card");
+    serviceCards.forEach(card => {
+      card.addEventListener("click", () => {
+        const expanded = card.getAttribute("aria-expanded") === "true";
+        serviceCards.forEach(c => {
+          c.classList.remove("active");
+          c.setAttribute("aria-expanded", "false");
+          const details = c.querySelector(".service-details");
+          if (details) details.hidden = true;
         });
-        card.classList.toggle('active');
+        if (!expanded) {
+          card.classList.add("active");
+          card.setAttribute("aria-expanded", "true");
+          const details = card.querySelector(".service-details");
+          if (details) details.hidden = false;
+        }
+      });
+      card.addEventListener("keydown", e => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          card.click();
+        }
       });
     });
 
     // Testimonial Carousel
-    const testimonials = document.querySelectorAll('.testimonial-item');
-    const testimonialDots = document.getElementById('testimonialDots');
-    let testimonialIdx = 0;
-    function showTestimonial(idx){
-      testimonials.forEach((item,i)=>{item.classList.toggle('active',i===idx);});
-      testimonialDots.querySelectorAll('.carousel-dot').forEach((dot,i)=>dot.classList.toggle('active',i===idx));
+    const testimonials = document.querySelectorAll(".testimonial-item");
+    const testimonialDots = document.getElementById("testimonialDots");
+    let testimonialIndex = 0;
+    function showTestimonial(index) {
+      testimonials.forEach((item, i) => {
+        item.classList.toggle("active", i === index);
+        testimonialDots.querySelectorAll("button").forEach((btn, btnIdx) => {
+          btn.setAttribute("aria-selected", btnIdx === index);
+          btn.classList.toggle("active", btnIdx === index);
+        });
+      });
     }
-    // Create dots
-    testimonials.forEach((_,i)=>{
-      const dot=document.createElement('button');
-      dot.className='carousel-dot' + (i===0 ? ' active':'');
-      dot.onclick=()=>{testimonialIdx=i;showTestimonial(i);}
+    testimonials.forEach((_, idx) => {
+      const dot = document.createElement("button");
+      dot.setAttribute("role", "tab");
+      dot.setAttribute("aria-selected", idx === 0);
+      dot.setAttribute("tabindex", idx === 0 ? "0" : "-1");
+      dot.className = idx === 0 ? "carousel-dot active" : "carousel-dot";
+      dot.addEventListener("click", () => {
+        testimonialIndex = idx;
+        showTestimonial(testimonialIndex);
+      });
       testimonialDots.appendChild(dot);
     });
-    // Auto-rotate every 7 seconds
-    setInterval(()=>{
-      testimonialIdx=(testimonialIdx+1)%testimonials.length;
-      showTestimonial(testimonialIdx);
+    setInterval(() => {
+      testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+      showTestimonial(testimonialIndex);
     }, 7000);
 
-    // Sticky CTA for mobile
-    function stickyCtaBar(){
-      if(window.innerWidth<=680){
-        document.querySelector('.sticky-cta-bar').style.display='flex';
-      }else{
-        document.querySelector('.sticky-cta-bar').style.display='none';
-      }
-    } window.addEventListener('resize',stickyCtaBar);window.addEventListener('DOMContentLoaded',stickyCtaBar);
+    // Sticky CTA
+    function stickyCta() {
+      const sticky = document.querySelector(".sticky-cta-bar");
+      if (window.innerWidth <= 680) sticky.style.display = "flex";
+      else sticky.style.display = "none";
+    }
+    window.addEventListener("resize", stickyCta);
+    window.addEventListener("load", stickyCta);
 
-    // Google Apps Script form handler
-    document.getElementById('enquiryFormReal').addEventListener('submit', function(e){
+    // Form submit handler with loading state
+    const form = document.getElementById("enquiryFormReal");
+    const scriptURL = "https://script.google.com/macros/s/AKfycbw2SzRwYE43E17vMqLKeZEGJVcm1l9NBU08tngfLBUNHJYleKwz-I7I2ZskNEGkP32X/exec";
+
+    form.addEventListener("submit", e => {
       e.preventDefault();
-      const form = e.target;
-      fetch("https://script.google.com/macros/s/AKfycbxemZE1hAOnOJul5EdAEtRL07kvnFAI3biZ52AC2OxKzy7UZck8HRTpqafMhe_hhRbY/exec", {
-        method: "POST", body: new FormData(form)
-      })
-      .then(response => {
-        if(response.ok){
-          alert("✅ Success! Your enquiry has been submitted.");
-          form.reset();
-        }else{
-          alert("⚠️ Error! Something went wrong.");
-        }
-      })
-      .catch(error=>alert("⚠️ Error: "+error.message));
+      const submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+      submitBtn.classList.add("loading");
+      submitBtn.textContent = "Submitting...";
+      
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then(response => {
+          if (response.ok) {
+            alert("✅ Success! Your enquiry has been submitted.");
+            form.reset();
+          } else {
+            alert("⚠️ Error! Unable to submit. Please try again later.");
+          }
+        })
+        .catch(error => alert("⚠️ Error: " + error.message))
+        .finally(() => {
+          submitBtn.disabled = false;
+          submitBtn.classList.remove("loading");
+          submitBtn.textContent = "Submit Request";
+        });
     });
   </script>
-
 </body>
 </html>
