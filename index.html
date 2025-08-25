@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> | Hassle-Free Maid Service in Pune</title>
+  <title>MAIDZY | Hassle-Free Maid Service in Pune</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -16,19 +16,9 @@
       background: #ff4d94;
       padding: 20px;
       text-align: center;
-      color: white;
     }
     header img {
-      height: 80px;
-      vertical-align: middle;
-      margin-right: 10px;
-    }
-    header h1 {
-      display: inline-block;
-      font-size: 2.5rem;
-      font-weight: bold;
-      vertical-align: middle;
-      margin: 0;
+      height: 100px; /* bigger logo */
     }
     nav {
       background: #ff80b5;
@@ -119,7 +109,6 @@
   <!-- HEADER -->
   <header>
     <img src="maidzy-icon.png" alt="Maidzy Logo">
-    <h1>MAIDZY</h1>
   </header>
 
   <!-- NAVIGATION -->
