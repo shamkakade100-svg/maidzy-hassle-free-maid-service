@@ -1,20 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MAIDZY | Trusted Maid Services in Pune</title>
-  <meta name="description" content="Hire verified maids in Pune with Maidzy. Trusted, fully verified housekeeping, cooking, babysitting, elder care, and deep cleaning professionals." />
-  <meta name="keywords" content="maid service Pune, housekeeping Pune, babysitting Pune, elder care Pune, cooking service Pune, deep cleaning Pune" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="maidzy-icon.png" type="image/png" />
-  <style>
-    /* Reset */
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>Maidzy | Hassle-Free Maid Service in Pune</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Maidzy - Verified & trusted maids in Pune for cleaning, cooking, babysitting, elder care, and more. Hassle-free booking on WhatsApp.">
+  <meta name="keywords" content="maid service Pune, housemaid Pune, cleaning service Pune, babysitter Pune, Maidzy, hire maid Pune">
+  <meta name="author" content="Maidzy">
+
+  <!-- Open Graph (Facebook & WhatsApp Preview) -->
+  <meta property="og:title" content="Maidzy - Hassle-Free Maid Service in Pune">
+  <meta property="og:description" content="Hire verified maids for cleaning, cooking, babysitting & more. Book instantly via WhatsApp.">
+  <meta property="og:image" content="https://yourdomain.com/maidzy-logo.png">
+  <meta property="og:url" content="https://maidzy.in">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maidzy - Hassle-Free Maid Service in Pune">
+  <meta name="twitter:description" content="Hire verified maids in Pune for daily needs. Book easily via WhatsApp.">
+  <meta name="twitter:image" content="https://yourdomain.com/maidzy-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="maidzy-logo.png">
+</head>
 
     body {
       margin: 0;
