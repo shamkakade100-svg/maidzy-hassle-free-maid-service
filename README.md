@@ -13,7 +13,7 @@
   <!-- Open Graph (Facebook & WhatsApp Preview) -->
   <meta property="og:title" content="Maidzy - Hassle-Free Maid Service in Pune">
   <meta property="og:description" content="Hire verified maids for cleaning, cooking, babysitting & more. Book instantly via WhatsApp.">
-  <meta property="og:image" content="https://yourdomain.com/maidzy-logo.png">
+  <meta property="og:image" content="https://maidzy-icon.png">
   <meta property="og:url" content="https://maidzy.in">
   <meta property="og:type" content="website">
 
@@ -21,7 +21,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Maidzy - Hassle-Free Maid Service in Pune">
   <meta name="twitter:description" content="Hire verified maids in Pune for daily needs. Book easily via WhatsApp.">
-  <meta name="twitter:image" content="https://yourdomain.com/maidzy-logo.png">
+  <meta name="twitter:image" content="https://maidzy-icon.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="maidzy-logo.png">
