@@ -512,10 +512,27 @@
   <p>&copy; 2025 Maidzy. All rights reserved.</p>
 </footer>
 <script>
-  document.querySelector('.contact-form').addEventListener('submit', e => {
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyUJR1Xmms4U2LKgYwBcANC6nD3kb5klkZBnb-6CA94DEEkuwzrwNLAr-IbqYeGTaF4/exec';
+  const form = document.querySelector('.contact-form');
+
+  form.addEventListener('submit', e => {
     e.preventDefault();
-    alert('Thank you for contacting Maidzy. We will get back to you shortly.');
-    e.target.reset();
+
+    const formData = new FormData(form);
+
+    fetch(scriptURL, { method: 'POST', body: formData })
+      .then(response => {
+        if (response.ok) {
+          alert('Thank you for contacting Maidzy. We will get back to you shortly.');
+          form.reset();
+        } else {
+          alert('There was a problem submitting your form. Please try again.');
+        }
+      })
+      .catch(error => {
+        alert('Error submitting form. Please check your connection and try again.');
+        console.error('Error!', error.message);
+      });
   });
 </script>
 </body>
