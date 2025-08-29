@@ -504,7 +504,7 @@
 </main>
 <footer>
   <div class="social-links" aria-label="Social media links">
-    <a href="https://facebook.com/maidzyin" target="_blank"><img src="fb-logo.png" alt="Facebook"></a>
+    <a href="https://www.facebook.com/share/1761Lv135m/" target="_blank"><img src="fb-logo.png" alt="Facebook"></a>
     <a href="https://www.instagram.com/maidzy11?igsh=MWdsOW1pbzk1ZnZyeQ==" target="_blank"><img src="insta-logo.png" alt="Instagram"></a>
     <a href="https://wa.me/918484925800" target="_blank"><img src="whatsapp-logo.png" alt="WhatsApp"></a>
   </div>
