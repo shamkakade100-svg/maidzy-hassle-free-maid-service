@@ -505,7 +505,7 @@
 <footer>
   <div class="social-links" aria-label="Social media links">
     <a href="https://facebook.com/maidzyin" target="_blank"><img src="fb-logo.png" alt="Facebook"></a>
-    <a href="https://instagram.com/maidzyin" target="_blank"><img src="insta-logo.png" alt="Instagram"></a>
+    <a href="https://www.instagram.com/maidzy11?igsh=MWdsOW1pbzk1ZnZyeQ==" target="_blank"><img src="insta-logo.png" alt="Instagram"></a>
     <a href="https://wa.me/918484925800" target="_blank"><img src="whatsapp-logo.png" alt="WhatsApp"></a>
   </div>
   <p>Phone: <a href="tel:+918484925800">+91 84849 25800</a> | Pune, Maharashtra, India</p>
