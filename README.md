@@ -383,6 +383,18 @@
     }
   }
 </style>
+  .badge img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+}
+
+.badge span {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--pink-main);
+}
+
 </head>
 <body>
 <header>
