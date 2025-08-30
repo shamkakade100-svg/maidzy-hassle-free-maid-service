@@ -182,13 +182,11 @@
   .sticky-book-btn:active {
     transform: translateY(-2px) scale(1.02);
   }
-  /* Maid profiles grid */
   .maid-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     gap: 34px;
   }
-  /* Maid card styles */
   .maid-card {
     background: var(--pink-light);
     padding: 30px 24px;
@@ -260,7 +258,6 @@
     background-color: #cd396b;
     outline: var(--focus-outline);
   }
-  /* Pricing section */
   #pricing {
     background: var(--white);
     border-radius: 24px;
@@ -268,13 +265,13 @@
     max-width: 700px;
     margin: 0 auto 80px;
     box-shadow: 0 10px 34px rgba(229,65,122,0.15);
+    text-align: center;
   }
   #pricing h2 {
     font-size: 2.6rem;
     font-weight: 700;
     color: var(--pink-main);
     margin-bottom: 36px;
-    text-align: center;
   }
   .pricing-block {
     font-size: 1.1rem;
@@ -286,59 +283,6 @@
     font-weight: 700;
     color: var(--pink-main);
   }
-  /* Contact form */
-  #contact-form {
-    background: var(--white);
-    border-radius: 24px;
-    padding: 42px 44px;
-    max-width: 650px;
-    margin: 0 auto 80px;
-    box-shadow: 0 10px 34px rgba(229,65,122,0.15);
-  }
-  #contact-form h2 {
-    font-size: 2.6rem;
-    font-weight: 700;
-    color: var(--pink-main);
-    margin-bottom: 36px;
-    text-align: center;
-  }
-  #contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-  }
-  #contact-form label {
-    font-weight: 700;
-    color: var(--pink-main);
-  }
-  #contact-form input, #contact-form select, #contact-form textarea {
-    padding: 12px 18px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    border-radius: 12px;
-    border: 1.8px solid #f3c6db;
-  }
-  #contact-form textarea {
-    min-height: 120px;
-    resize: vertical;
-  }
-  #contact-form button {
-    background: var(--pink-main);
-    border: none;
-    padding: 18px 0;
-    font-weight: 800;
-    font-size: 1.28rem;
-    border-radius: 42px;
-    color: var(--white);
-    cursor: pointer;
-    box-shadow: 0 12px 34px rgba(229,65,122,0.6);
-    transition: background-color 0.3s ease;
-  }
-  #contact-form button:hover, #contact-form button:focus {
-    background: #ca376a;
-    outline: var(--focus-outline);
-  }
-  /* Testimonial improvements */
   .testimonial {
     max-width: 750px;
     margin: 0 auto 80px;
@@ -362,7 +306,7 @@
     display: block;
     margin-top: 16px;
     color: var(--pink-main);
-  }
+  }  
   footer {
     background: var(--white);
     text-align: center;
@@ -427,7 +371,7 @@
       grid-template-columns: 1fr;
       gap: 24px;
     }
-    #pricing, #contact-form {
+    #pricing {
       padding: 30px 20px;
       margin-bottom: 60px;
     }
@@ -450,7 +394,6 @@
     <a href="#about" tabindex="0">About Us</a>
     <a href="#maids" tabindex="0">Meet Our Maids</a>
     <a href="#pricing" tabindex="0">Pricing</a>
-    <a href="#contact-form" tabindex="0">Contact</a>
     <a href="#why-choose-us" tabindex="0">Why Choose Us</a>
   </nav>
 </header>
@@ -458,7 +401,7 @@
   <section class="hero" role="banner" aria-labelledby="hero-title" aria-describedby="hero-subtitle">
     <h1 id="hero-title">Hire Reliable Maids in Pune</h1>
     <p id="hero-subtitle">Trusted, background-checked professionals for your home. Book now for fast and safe help.</p>
-    <a href="https://wa.me/9175649455?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me." 
+    <a href="https://wa.me/919175649455?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me." 
        class="btn-primary" 
        tabindex="0" 
        target="_blank" 
@@ -482,7 +425,7 @@
         <div class="maid-services">House Cleaning, Cooking</div>
         <div class="maid-experience">Experience: 5 years</div>
         <div class="verified-badge"><img src="verified.png" alt="Verified Badge"/> Verified Background</div>
-        <a href="https://wa.me/9175649455?text=Hello%20Radha%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Radha on WhatsApp">Contact</a>
+        <a href="https://wa.me/919175649455?text=Hello%20Radha%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Radha on WhatsApp">Contact</a>
       </article>
       <article class="maid-card" tabindex="0">
         <img src="maid-savita.jpg" alt="Savita" class="maid-photo" loading="lazy"/>
@@ -490,7 +433,7 @@
         <div class="maid-services">Babysitting, Elder Care</div>
         <div class="maid-experience">Experience: 6 years</div>
         <div class="verified-badge"><img src="verified.png" alt="Verified Badge"/> Verified Background</div>
-        <a href="https://wa.me/9175649455?text=Hello%20Savita%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Savita on WhatsApp">Contact</a>
+        <a href="https://wa.me/919175649455?text=Hello%20Savita%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Savita on WhatsApp">Contact</a>
       </article>
       <article class="maid-card" tabindex="0">
         <img src="maid-anita.jpg" alt="Anita" class="maid-photo" loading="lazy"/>
@@ -498,7 +441,7 @@
         <div class="maid-services">Deep Cleaning, General Help</div>
         <div class="maid-experience">Experience: 4 years</div>
         <div class="verified-badge"><img src="verified.png" alt="Verified Badge"/> Verified Background</div>
-        <a href="https://wa.me/9175649455?text=Hello%20Anita%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Anita on WhatsApp">Contact</a>
+        <a href="https://wa.me/919175649455?text=Hello%20Anita%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Anita on WhatsApp">Contact</a>
       </article>
     </div>
   </section>
@@ -514,32 +457,6 @@
     <div class="pricing-block">
       <em>Includes background-checked maid assignment, replacements, and priority support.</em>
     </div>
-  </section>
-
-  <section id="contact-form">
-    <h2>Send us your Enquiry</h2>
-    <form>
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required aria-required="true" />
-      
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a 10-digit phone number" required aria-required="true" />
-      
-      <label for="service">Select Service</label>
-      <select id="service" name="service" required aria-required="true">
-        <option value="" disabled selected>Select a service</option>
-        <option value="House Cleaning">House Cleaning</option>
-        <option value="Babysitting">Babysitting</option>
-        <option value="Cooking">Cooking</option>
-        <option value="Elder Care">Elder Care</option>
-        <option value="Deep Cleaning">Deep Cleaning</option>
-      </select>
-      
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required aria-required="true"></textarea>
-      
-      <button type="submit">Submit</button>
-    </form>
   </section>
 
   <section id="why-choose-us">
@@ -565,7 +482,7 @@
 </main>
 
 <button class="sticky-book-btn" 
-        onclick="window.open('https://wa.me/9175649455?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me.', '_blank')" 
+        onclick="window.open('https://wa.me/919175649455?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me.', '_blank')" 
         aria-label="Chat on WhatsApp to book Maidzy services">
   Book Now
 </button>
@@ -574,29 +491,10 @@
   <div class="social-links" aria-label="Social media links">
     <a href="https://www.facebook.com/share/1761Lv135m/" target="_blank" rel="noopener" tabindex="0" aria-label="Facebook"><img src="fb-logo.png" alt="Facebook"></a>
     <a href="https://www.instagram.com/maidzy11?igsh=MWdsOW1pbzk1ZnZyeQ==" target="_blank" rel="noopener" tabindex="0" aria-label="Instagram"><img src="insta-logo.png" alt="Instagram"></a>
-    <a href="https://wa.me/9175649455" target="_blank" rel="noopener" tabindex="0" aria-label="WhatsApp"><img src="whatsapp-logo.png" alt="WhatsApp"></a>
+    <a href="https://wa.me/919175649455" target="_blank" rel="noopener" tabindex="0" aria-label="WhatsApp"><img src="whatsapp-logo.png" alt="WhatsApp"></a>
   </div>
-  <p>Phone: <a href="tel:9175649455">9175649455</a> | Pune, Maharashtra, India</p>
+  <p>Phone: <a href="tel:+919175649455">+91 91756 49455</a> | Pune, Maharashtra, India</p>
   <p>&copy; 2025 Maidzy. All rights reserved.</p>
 </footer>
-
-<script>
-  // Simple form submission handler: sends data to your server, or integrate backend as needed
-  document.querySelector('#contact-form form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = this.name.value.trim();
-    const phone = this.phone.value.trim();
-    const service = this.service.value;
-    const message = this.message.value.trim();
-
-    if (!name || !phone.match(/^\d{10}$/) || !service || !message) {
-      alert('Please fill all fields correctly.');
-      return;
-    }
-    // Replace alert with actual submission logic like API call or email forwarding
-    alert(`Thank you ${name}, we received your enquiry for ${service}. We will contact you soon.`);
-    this.reset();
-  });
-</script>
 </body>
 </html>
