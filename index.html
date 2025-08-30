@@ -237,7 +237,13 @@
     color: var(--pink-main);
   }
   .verified-badge img {
-    width: 18px;
+    width: 36px;
+    height: 36px;
+  }
+  .badge span {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--pink-main);
   }
   .btn-contact {
     background: var(--pink-main);
@@ -383,18 +389,6 @@
     }
   }
 </style>
-  .badge img {
-  width: 36px;
-  height: 36px;
-  transition: transform 0.3s ease;
-}
-
-.badge span {
-  font-weight: 800;
-  font-size: 1.5rem;
-  color: var(--pink-main);
-}
-
 </head>
 <body>
 <header>
@@ -422,7 +416,6 @@
       Book Now
     </a>
   </section>
-
   <section id="about">
     <h2>About Maidzy</h2>
     <p>Maidzy is Pune's premium maid service provider launching this month. We connect you with background-checked, vetted, and experienced professionals who care as much as you do.</p>
