@@ -377,7 +377,7 @@
   <section class="hero" role="banner" aria-labelledby="hero-title" aria-describedby="hero-subtitle">
     <h1 id="hero-title">Hire Reliable Maids in Pune</h1>
     <p id="hero-subtitle">Trusted, background-checked professionals for your home. Book now for fast and safe help.</p>
-    <a href="https://wa.me/919175649455?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me." 
+    <a href="https://wa.me/9175649455?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me." 
        class="btn-primary" 
        tabindex="0" 
        target="_blank" 
@@ -406,55 +406,4 @@
       <article class="service-card" role="listitem" tabindex="0" aria-label="Cooking Service">
         <span aria-hidden="true" aria-label="Cooking pan icon">🍳</span>
         <h3>Cooking</h3>
-        <p>Delicious home-cooked meals tailored to your preferences.</p>
-      </article>
-      <article class="service-card" role="listitem" tabindex="0" aria-label="Elder Care Service">
-        <span aria-hidden="true" aria-label="Elderly person icon">👵</span>
-        <h3>Elder Care</h3>
-        <p>Compassionate and attentive care for your senior family members.</p>
-      </article>
-      <article class="service-card" role="listitem" tabindex="0" aria-label="Deep Cleaning Service">
-        <span aria-hidden="true" aria-label="Soap icon">🧼</span>
-        <h3>Deep Cleaning</h3>
-        <p>Thorough cleaning solutions for a hygienic, fresh home.</p>
-      </article>
-    </div>
-  </section>
-  <section id="why-choose-us">
-    <h2>Why Choose Us</h2>
-    <div class="badges-group" role="list">
-      <div class="badge" role="listitem" tabindex="0">
-        <img src="badge1.png" alt="Certified Professionals" loading="lazy" />
-        <span>Certified Professionals</span>
-      </div>
-      <div class="badge" role="listitem" tabindex="0">
-        <img src="badge2.png" alt="Background Checked" loading="lazy" />
-        <span>Background Checked</span>
-      </div>
-      <div class="badge" role="listitem" tabindex="0">
-        <img src="badge3.png" alt="5 Star Ratings" loading="lazy" />
-        <span>5 Star Ratings</span>
-      </div>
-    </div>
-    <article class="testimonial" tabindex="0" aria-label="Client testimonial">
-      "Fast and trustworthy service! Maidzy always delivers exactly what they promise." — <strong>Priya, Pune</strong>
-    </article>
-  </section>
-</main>
-<button class="sticky-book-btn" 
-        onclick="window.open('https://wa.me/9175649455?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me.
-', '_blank')" 
-        aria-label="Chat on WhatsApp to book Maidzy services">
-  Book Now
-</button>
-<footer>
-  <div class="social-links" aria-label="Social media links">
-    <a href="https://www.facebook.com/share/1761Lv135m/" target="_blank" rel="noopener" tabindex="0" aria-label="Facebook"><img src="fb-logo.png" alt="Facebook"></a>
-    <a href="https://www.instagram.com/maidzy11?igsh=MWdsOW1pbzk1ZnZyeQ==" target="_blank" rel="noopener" tabindex="0" aria-label="Instagram"><img src="insta-logo.png" alt="Instagram"></a>
-    <a href="https://wa.me/919175649455" target="_blank" rel="noopener" tabindex="0" aria-label="WhatsApp"><img src="whatsapp-logo.png" alt="WhatsApp"></a>
-  </div>
-  <p>Phone: <a href="tel:+919175649455">+91 91756 49455</a> | Pune, Maharashtra, India</p>
-  <p>&copy; 2025 Maidzy. All rights reserved.</p>
-</footer>
-</body>
-</html>
+        <p>Delicious home-cooked meals tailored to your preferences
