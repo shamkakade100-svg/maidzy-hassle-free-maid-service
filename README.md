@@ -465,7 +465,7 @@
         <div class="maid-name">राधा (Radha)</div>
         <div class="maid-services">House Cleaning, Cooking</div>
         <div class="maid-experience">Experience: 5 years</div>
-        <div class="verified-badge"><img src="verified.png" alt="Verified Badge"/> Verified Background</div>
+        <div class="verified-badge"><img src="badge2.png" alt="Verified Badge"/> Verified Background</div>
         <a href="https://wa.me/919175649455?text=Hello%20Radha%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Radha on WhatsApp">Contact</a>
       </article>
       <article class="maid-card" tabindex="0">
@@ -473,7 +473,7 @@
         <div class="maid-name">सावित्री (Savita)</div>
         <div class="maid-services">Babysitting, Elder Care</div>
         <div class="maid-experience">Experience: 6 years</div>
-        <div class="verified-badge"><img src="verified.png" alt="Verified Badge"/> Verified Background</div>
+        <div class="verified-badge"><img src="badge2.png" alt="Verified Badge"/> Verified Background</div>
         <a href="https://wa.me/919175649455?text=Hello%20Savita%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Savita on WhatsApp">Contact</a>
       </article>
       <article class="maid-card" tabindex="0">
@@ -481,7 +481,7 @@
         <div class="maid-name">अनीता (Anita)</div>
         <div class="maid-services">Deep Cleaning, General Help</div>
         <div class="maid-experience">Experience: 4 years</div>
-        <div class="verified-badge"><img src="verified.png" alt="Verified Badge"/> Verified Background</div>
+        <div class="verified-badge"><img src="badge2.png" alt="Verified Badge"/> Verified Background</div>
         <a href="https://wa.me/919175649455?text=Hello%20Anita%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Anita on WhatsApp">Contact</a>
       </article>
     </div>
