@@ -109,7 +109,6 @@
     color: var(--pink-main);
     margin-bottom: 38px;
     user-select: none;
-    position: relative;
   }
   .hero {
     background: var(--white);
@@ -183,90 +182,166 @@
   .sticky-book-btn:active {
     transform: translateY(-2px) scale(1.02);
   }
-  .services-grid {
+  /* Maid profiles grid */
+  .maid-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-    gap: 32px;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 34px;
   }
-  .service-card {
+  /* Maid card styles */
+  .maid-card {
     background: var(--pink-light);
-    border-radius: 20px;
-    box-shadow: 0 7px 26px rgba(229,65,122,0.13);
-    padding: 36px 30px 26px;
-    text-align: center;
+    padding: 30px 24px;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(229,65,122,0.18);
     cursor: default;
-    transition: box-shadow 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.35s ease, transform 0.35s ease;
-    transform-style: preserve-3d;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    user-select: none;
   }
-  .service-card:hover, .service-card:focus {
-    background: var(--pink-accent);
-    box-shadow: 0 16px 48px rgba(229,65,122,0.35);
+  .maid-card:hover, .maid-card:focus {
+    box-shadow: 0 14px 46px rgba(229,65,122,0.32);
+    transform: translateY(-8px) scale(1.05);
     outline: var(--focus-outline);
-    transform: translateY(-8px) rotateX(4deg) rotateY(4deg) scale(1.03);
   }
-  .service-card span {
-    font-size: 3.8rem;
+  .maid-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
     margin-bottom: 18px;
-    display: block;
+    box-shadow: 0 4px 12px rgba(229,65,122,0.3);
+  }
+  .maid-name {
+    font-size: 1.6rem;
+    font-weight: 800;
     color: var(--pink-main);
-    transition: transform 0.4s ease;
+    margin-bottom: 8px;
   }
-  .service-card:hover span, .service-card:focus span {
-    transform: rotate(10deg) scale(1.1);
-  }
-  .service-card h3 {
-    font-weight: 700;
-    font-size: 1.55rem;
-    margin-bottom: 16px;
-    color: var(--pink-main);
-  }
-  .service-card p {
+  .maid-services {
+    font-size: 1rem;
     font-weight: 600;
+    color: var(--gray-dark);
+    margin-bottom: 12px;
+  }
+  .maid-experience {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 18px;
+  }
+  .verified-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--pink-main);
+  }
+  .verified-badge img {
+    width: 18px;
+  }
+  .btn-contact {
+    background: var(--pink-main);
+    border: none;
+    padding: 12px 36px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 36px;
+    cursor: pointer;
+    box-shadow: 0 10px 26px rgba(229,65,122,0.5);
+    color: var(--white);
+    user-select: none;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-contact:hover, .btn-contact:focus {
+    background-color: #cd396b;
+    outline: var(--focus-outline);
+  }
+  /* Pricing section */
+  #pricing {
+    background: var(--white);
+    border-radius: 24px;
+    padding: 42px 44px;
+    max-width: 700px;
+    margin: 0 auto 80px;
+    box-shadow: 0 10px 34px rgba(229,65,122,0.15);
+  }
+  #pricing h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--pink-main);
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .pricing-block {
     font-size: 1.1rem;
     color: var(--gray-dark);
+    margin-bottom: 20px;
+    line-height: 1.5;
   }
-  .badges-group {
-    display: flex;
-    max-width: 880px;
-    margin: 0 auto 40px;
-    justify-content: center;
-    gap: 38px;
-    flex-wrap: wrap;
-  }
-  .badge {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    background: var(--pink-light);
-    padding: 16px 30px;
-    border-radius: 18px;
-    box-shadow: 0 6px 20px rgba(229,65,122,0.1);
-    user-select: none;
-    cursor: default;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-  }
-  .badge:hover, .badge:focus {
-    background: var(--pink-accent);
-    box-shadow: 0 10px 28px rgba(229,65,122,0.25);
-    transform: translateY(-4px) scale(1.05);
-    outline: var(--focus-outline);
-  }
-  .badge img {
-    width: 52px;
-    height: 52px;
-    transition: transform 0.3s ease;
-  }
-  .badge:hover img, .badge:focus img {
-    transform: rotate(15deg) scale(1.1);
-  }
-  .badge span {
+  .pricing-amount {
     font-weight: 700;
-    font-size: 1.2rem;
     color: var(--pink-main);
   }
+  /* Contact form */
+  #contact-form {
+    background: var(--white);
+    border-radius: 24px;
+    padding: 42px 44px;
+    max-width: 650px;
+    margin: 0 auto 80px;
+    box-shadow: 0 10px 34px rgba(229,65,122,0.15);
+  }
+  #contact-form h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--pink-main);
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  #contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  #contact-form label {
+    font-weight: 700;
+    color: var(--pink-main);
+  }
+  #contact-form input, #contact-form select, #contact-form textarea {
+    padding: 12px 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 1.8px solid #f3c6db;
+  }
+  #contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  #contact-form button {
+    background: var(--pink-main);
+    border: none;
+    padding: 18px 0;
+    font-weight: 800;
+    font-size: 1.28rem;
+    border-radius: 42px;
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 0 12px 34px rgba(229,65,122,0.6);
+    transition: background-color 0.3s ease;
+  }
+  #contact-form button:hover, #contact-form button:focus {
+    background: #ca376a;
+    outline: var(--focus-outline);
+  }
+  /* Testimonial improvements */
   .testimonial {
     max-width: 750px;
-    margin: 0 auto;
+    margin: 0 auto 80px;
     background: var(--pink-light);
     border-radius: 24px;
     padding: 36px 30px;
@@ -287,7 +362,7 @@
     display: block;
     margin-top: 16px;
     color: var(--pink-main);
-  }  
+  }
   footer {
     background: var(--white);
     text-align: center;
@@ -348,9 +423,13 @@
     .hero h1 {
       font-size: 2.45rem;
     }
-    .services-grid {
-      grid-template-columns: 1fr 1fr;
+    .maid-grid {
+      grid-template-columns: 1fr;
       gap: 24px;
+    }
+    #pricing, #contact-form {
+      padding: 30px 20px;
+      margin-bottom: 60px;
     }
     .sticky-book-btn {
       bottom: 16px;
@@ -369,7 +448,9 @@
   </div>
   <nav aria-label="Main navigation">
     <a href="#about" tabindex="0">About Us</a>
-    <a href="#services" tabindex="0">Services</a>
+    <a href="#maids" tabindex="0">Meet Our Maids</a>
+    <a href="#pricing" tabindex="0">Pricing</a>
+    <a href="#contact-form" tabindex="0">Contact</a>
     <a href="#why-choose-us" tabindex="0">Why Choose Us</a>
   </nav>
 </header>
@@ -386,40 +467,81 @@
       Book Now
     </a>
   </section>
+
   <section id="about">
     <h2>About Maidzy</h2>
     <p>Maidzy is Pune's premium maid service provider launching this month. We connect you with background-checked, vetted, and experienced professionals who care as much as you do.</p>
   </section>
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services-grid" role="list">
-      <article class="service-card" role="listitem" tabindex="0" aria-label="House Cleaning Service">
-        <span aria-hidden="true" aria-label="Broom icon">🧹</span>
-        <h3>House Cleaning</h3>
-        <p>Comprehensive home cleaning for a spotlessly fresh environment.</p>
+
+  <section id="maids">
+    <h2>Meet Our Maids</h2>
+    <div class="maid-grid">
+      <article class="maid-card" tabindex="0">
+        <img src="maid-radha.jpg" alt="Radha" class="maid-photo" loading="lazy"/>
+        <div class="maid-name">राधा (Radha)</div>
+        <div class="maid-services">House Cleaning, Cooking</div>
+        <div class="maid-experience">Experience: 5 years</div>
+        <div class="verified-badge"><img src="verified.png" alt="Verified Badge"/> Verified Background</div>
+        <a href="https://wa.me/9175649455?text=Hello%20Radha%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Radha on WhatsApp">Contact</a>
       </article>
-      <article class="service-card" role="listitem" tabindex="0" aria-label="Babysitting Service">
-        <span aria-hidden="true" aria-label="Baby icon">👶</span>
-        <h3>Babysitting</h3>
-        <p>Experienced babysitters trusted to care for your little ones.</p>
+      <article class="maid-card" tabindex="0">
+        <img src="maid-savita.jpg" alt="Savita" class="maid-photo" loading="lazy"/>
+        <div class="maid-name">सावित्री (Savita)</div>
+        <div class="maid-services">Babysitting, Elder Care</div>
+        <div class="maid-experience">Experience: 6 years</div>
+        <div class="verified-badge"><img src="verified.png" alt="Verified Badge"/> Verified Background</div>
+        <a href="https://wa.me/9175649455?text=Hello%20Savita%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Savita on WhatsApp">Contact</a>
       </article>
-      <article class="service-card" role="listitem" tabindex="0" aria-label="Cooking Service">
-        <span aria-hidden="true" aria-label="Cooking pan icon">🍳</span>
-        <h3>Cooking</h3>
-        <p>Delicious home-cooked meals tailored to your preferences.</p>
-      </article>
-      <article class="service-card" role="listitem" tabindex="0" aria-label="Elder Care Service">
-        <span aria-hidden="true" aria-label="Elderly person icon">👵</span>
-        <h3>Elder Care</h3>
-        <p>Compassionate and attentive care for your senior family members.</p>
-      </article>
-      <article class="service-card" role="listitem" tabindex="0" aria-label="Deep Cleaning Service">
-        <span aria-hidden="true" aria-label="Soap icon">🧼</span>
-        <h3>Deep Cleaning</h3>
-        <p>Thorough cleaning solutions for a hygienic, fresh home.</p>
+      <article class="maid-card" tabindex="0">
+        <img src="maid-anita.jpg" alt="Anita" class="maid-photo" loading="lazy"/>
+        <div class="maid-name">अनीता (Anita)</div>
+        <div class="maid-services">Deep Cleaning, General Help</div>
+        <div class="maid-experience">Experience: 4 years</div>
+        <div class="verified-badge"><img src="verified.png" alt="Verified Badge"/> Verified Background</div>
+        <a href="https://wa.me/9175649455?text=Hello%20Anita%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Anita on WhatsApp">Contact</a>
       </article>
     </div>
   </section>
+
+  <section id="pricing">
+    <h2>Pricing and Plans</h2>
+    <div class="pricing-block">
+      Registration Fee: <span class="pricing-amount">₹1,000 (One-time)</span>
+    </div>
+    <div class="pricing-block">
+      Monthly Subscription: <span class="pricing-amount">Starting from ₹5,000 per month</span>
+    </div>
+    <div class="pricing-block">
+      <em>Includes background-checked maid assignment, replacements, and priority support.</em>
+    </div>
+  </section>
+
+  <section id="contact-form">
+    <h2>Send us your Enquiry</h2>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required aria-required="true" />
+      
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a 10-digit phone number" required aria-required="true" />
+      
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required aria-required="true">
+        <option value="" disabled selected>Select a service</option>
+        <option value="House Cleaning">House Cleaning</option>
+        <option value="Babysitting">Babysitting</option>
+        <option value="Cooking">Cooking</option>
+        <option value="Elder Care">Elder Care</option>
+        <option value="Deep Cleaning">Deep Cleaning</option>
+      </select>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required aria-required="true"></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
   <section id="why-choose-us">
     <h2>Why Choose Us</h2>
     <div class="badges-group" role="list">
@@ -441,19 +563,40 @@
     </article>
   </section>
 </main>
+
 <button class="sticky-book-btn" 
         onclick="window.open('https://wa.me/9175649455?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me.', '_blank')" 
         aria-label="Chat on WhatsApp to book Maidzy services">
   Book Now
 </button>
+
 <footer>
   <div class="social-links" aria-label="Social media links">
     <a href="https://www.facebook.com/share/1761Lv135m/" target="_blank" rel="noopener" tabindex="0" aria-label="Facebook"><img src="fb-logo.png" alt="Facebook"></a>
     <a href="https://www.instagram.com/maidzy11?igsh=MWdsOW1pbzk1ZnZyeQ==" target="_blank" rel="noopener" tabindex="0" aria-label="Instagram"><img src="insta-logo.png" alt="Instagram"></a>
     <a href="https://wa.me/9175649455" target="_blank" rel="noopener" tabindex="0" aria-label="WhatsApp"><img src="whatsapp-logo.png" alt="WhatsApp"></a>
   </div>
-  <p>Phone: <a href="tel:+9175649455">+91 75649 45455</a> | Pune, Maharashtra, India</p>
+  <p>Phone: <a href="tel:9175649455">9175649455</a> | Pune, Maharashtra, India</p>
   <p>&copy; 2025 Maidzy. All rights reserved.</p>
 </footer>
+
+<script>
+  // Simple form submission handler: sends data to your server, or integrate backend as needed
+  document.querySelector('#contact-form form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = this.name.value.trim();
+    const phone = this.phone.value.trim();
+    const service = this.service.value;
+    const message = this.message.value.trim();
+
+    if (!name || !phone.match(/^\d{10}$/) || !service || !message) {
+      alert('Please fill all fields correctly.');
+      return;
+    }
+    // Replace alert with actual submission logic like API call or email forwarding
+    alert(`Thank you ${name}, we received your enquiry for ${service}. We will contact you soon.`);
+    this.reset();
+  });
+</script>
 </body>
 </html>
