@@ -237,13 +237,49 @@
     color: var(--pink-main);
   }
   .verified-badge img {
-    width: 36px;
-    height: 36px;
+    width: 18px;
+  }
+  /* Updated badge styles */
+  .badges-group {
+    display: flex;
+    max-width: 880px;
+    margin: 0 auto 40px;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--pink-light);
+    padding: 14px 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(229,65,122,0.12);
+    user-select: none;
+    cursor: default;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  .badge:hover, .badge:focus {
+    background: var(--pink-accent);
+    box-shadow: 0 8px 30px rgba(229,65,122,0.3);
+    transform: translateY(-3px);
+    outline: var(--focus-outline);
+  }
+  .badge img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+  .badge:hover img, .badge:focus img {
+    transform: scale(1.15) rotate(10deg);
   }
   .badge span {
-    font-weight: 800;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
     color: var(--pink-main);
+    user-select: none;
+    white-space: nowrap;
   }
   .btn-contact {
     background: var(--pink-main);
@@ -312,7 +348,7 @@
     display: block;
     margin-top: 16px;
     color: var(--pink-main);
-  }  
+  }
   footer {
     background: var(--white);
     text-align: center;
