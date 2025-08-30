@@ -442,7 +442,8 @@
   </section>
 </main>
 <button class="sticky-book-btn" 
-        onclick="window.open('https://wa.me/919175649455?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me.', '_blank')" 
+        onclick="window.open('https://wa.me/9175649455?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me.
+', '_blank')" 
         aria-label="Chat on WhatsApp to book Maidzy services">
   Book Now
 </button>
