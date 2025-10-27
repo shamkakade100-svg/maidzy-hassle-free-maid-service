@@ -443,7 +443,7 @@
   <section class="hero" role="banner" aria-labelledby="hero-title" aria-describedby="hero-subtitle">
     <h1 id="hero-title">Hire Reliable Maids in Pune</h1>
     <p id="hero-subtitle">Trusted, background-checked professionals for your home. Book now for fast and safe help.</p>
-    <a href="https://wa.me/919175649455?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me." 
+    <a href="https://wa.me/918484925800?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me." 
        class="btn-primary" 
        tabindex="0" 
        target="_blank" 
@@ -466,7 +466,7 @@
         <div class="maid-services">House Cleaning, Cooking</div>
         <div class="maid-experience">Experience: 5 years</div>
         <div class="verified-badge"><img src="badge2.png" alt="Verified Badge"/> Verified Background</div>
-        <a href="https://wa.me/919175649455?text=Hello%20Radha%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Radha on WhatsApp">Contact</a>
+        <a href="https://wa.me/918484925800?text=Hello%20Radha%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Radha on WhatsApp">Contact</a>
       </article>
       <article class="maid-card" tabindex="0">
         <img src="maid-savita.jpg" alt="Savita" class="maid-photo" loading="lazy"/>
@@ -474,7 +474,7 @@
         <div class="maid-services">Babysitting, Elder Care</div>
         <div class="maid-experience">Experience: 6 years</div>
         <div class="verified-badge"><img src="badge2.png" alt="Verified Badge"/> Verified Background</div>
-        <a href="https://wa.me/919175649455?text=Hello%20Savita%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Savita on WhatsApp">Contact</a>
+        <a href="https://wa.me/918484925800?text=Hello%20Savita%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Savita on WhatsApp">Contact</a>
       </article>
       <article class="maid-card" tabindex="0">
         <img src="maid-anita.jpg" alt="Anita" class="maid-photo" loading="lazy"/>
@@ -482,7 +482,7 @@
         <div class="maid-services">Deep Cleaning, General Help</div>
         <div class="maid-experience">Experience: 4 years</div>
         <div class="verified-badge"><img src="badge2.png" alt="Verified Badge"/> Verified Background</div>
-        <a href="https://wa.me/919175649455?text=Hello%20Anita%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Anita on WhatsApp">Contact</a>
+        <a href="https://wa.me/918484925800?text=Hello%20Anita%20%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener" class="btn-contact" aria-label="Contact Anita on WhatsApp">Contact</a>
       </article>
     </div>
   </section>
@@ -523,7 +523,7 @@
 </main>
 
 <button class="sticky-book-btn" 
-        onclick="window.open('https://wa.me/919175649455?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me.', '_blank')" 
+        onclick="window.open('https://wa.me/918484925800?text=Hello%20Maidzy%2C%20I%20am%20interested%20in%20your%20maid%20services.%20Please%20contact%20me.', '_blank')" 
         aria-label="Chat on WhatsApp to book Maidzy services">
   Book Now
 </button>
@@ -532,9 +532,9 @@
   <div class="social-links" aria-label="Social media links">
     <a href="https://www.facebook.com/share/1761Lv135m/" target="_blank" rel="noopener" tabindex="0" aria-label="Facebook"><img src="fb-logo.png" alt="Facebook"></a>
     <a href="https://www.instagram.com/maidzy11?igsh=MWdsOW1pbzk1ZnZyeQ==" target="_blank" rel="noopener" tabindex="0" aria-label="Instagram"><img src="insta-logo.png" alt="Instagram"></a>
-    <a href="https://wa.me/919175649455" target="_blank" rel="noopener" tabindex="0" aria-label="WhatsApp"><img src="whatsapp-logo.png" alt="WhatsApp"></a>
+    <a href="https://wa.me/918484925800" target="_blank" rel="noopener" tabindex="0" aria-label="WhatsApp"><img src="whatsapp-logo.png" alt="WhatsApp"></a>
   </div>
-  <p>Phone: <a href="tel:+919175649455">+91 91756 49455</a> | Pune, Maharashtra, India</p>
+  <p>Phone: <a href="tel:+918484925800">+91 91756 49455</a> | Pune, Maharashtra, India</p>
   <p>&copy; 2025 Maidzy. All rights reserved.</p>
 </footer>
 </body>
