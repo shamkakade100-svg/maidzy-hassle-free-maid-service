@@ -534,7 +534,7 @@
     <a href="https://www.instagram.com/maidzy11?igsh=MWdsOW1pbzk1ZnZyeQ==" target="_blank" rel="noopener" tabindex="0" aria-label="Instagram"><img src="insta-logo.png" alt="Instagram"></a>
     <a href="https://wa.me/918484925800" target="_blank" rel="noopener" tabindex="0" aria-label="WhatsApp"><img src="whatsapp-logo.png" alt="WhatsApp"></a>
   </div>
-  <p>Phone: <a href="tel:+918484925800">+91 91756 49455</a> | Pune, Maharashtra, India</p>
+  <p>Phone: <a href="tel:+918484925800"> | Pune, Maharashtra, India</p>
   <p>&copy; 2025 Maidzy. All rights reserved.</p>
 </footer>
 </body>
